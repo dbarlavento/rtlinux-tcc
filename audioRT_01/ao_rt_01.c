@@ -10,10 +10,13 @@
 /*
  * Programa que gera uma onda senoidal de frequência e duração definidas pelo usuário.
  * Autor: Daniel Barlavento Gomes
- * Versão atual: 1
+ * Versão atual: 2
  * Data: 15/11/2016
+ * Última atualização: 16/11/2016
  *
  * 15-11-2016: Apenas gera uma onda senoidal de 440Hz é gerada por um segundo.
+ *
+ * 16-11-2016: A onda de saída agora é uma onda quadrada com nível baixo igual a zero
  *
  * Nota: A compilação deste programa exige os parâmetros do gcc:
  * -lao
@@ -40,6 +43,7 @@ int main(int argc, char* argv[])
    int sample;
    float freq = FREQ;
    int i;
+   float teste;
 
    fprintf(stderr, "Áudio de tempo real - v.1\n");
 
@@ -68,9 +72,18 @@ int main(int argc, char* argv[])
    buf_size = format.bits/8 * format.channels * format.rate;
    buffer = calloc(buf_size, sizeof(char));
 
+   printf("Buffer = %d\n", buf_size);
+
    for (i = 0; i < format.rate; i++) {
-      sample = (int)(0.75 * 32768.0 *
-                     sin(2 * M_PI * freq * ((float) i/format.rate)));
+      sample = (int)(10000 * sin(2 * M_PI * freq * ((float) i/format.rate)));
+
+      //printf("Sample %d = %d\n", i, sample);
+
+      if( sample > 0 ) {
+         sample = (int)(0.75 * 32768.0 * 1);
+      } else {
+         sample = (int)(0);
+      }
 
       /* Atribui o mesmo sinal a ambos os canais */
       buffer[4*i] = buffer[4*i+2] = sample & 0xff;
