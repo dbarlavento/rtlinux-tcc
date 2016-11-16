@@ -10,7 +10,7 @@
 /*
  * Programa que gera uma onda senoidal de frequência e duração definidas pelo usuário.
  * Autor: Daniel Barlavento Gomes
- * Versão atual: 2
+ * Versão atual: 3
  * Data: 15/11/2016
  * Última atualização: 16/11/2016
  *
@@ -18,20 +18,26 @@
  *
  * 16-11-2016: A onda de saída agora é uma onda quadrada com nível baixo igual a zero
  *
+ * 16-11-2016: Adicionados mais dois modos de saída, pulso e 8 bits.
+ *
  * Nota: A compilação deste programa exige os parâmetros do gcc:
  * -lao
  * -ldl
  * -lm
- * -lrt (não na versão 1)
+ * -lrt (não na versão RT)
  */
 
-#define BUFFER 4096
+#define BUFFER (1024 * 4) //Tamanho do buffer de saída - Não está sendo usado!
 
 #define FREQ 440 //Frequência da senoide
 
 #define NUM_CANAIS 2 //Número de canais de saída
 #define BIT_RESOLUCAO 16 //Número de bits de resolução da saída
 #define TX_AMOSTRAGEM 44100 //Taxa de amostragem da saída
+
+int pulso(int duracao, int sp_rate) {
+
+}
 
 int main(int argc, char* argv[])
 {
@@ -75,17 +81,43 @@ int main(int argc, char* argv[])
    printf("Buffer = %d\n", buf_size);
 
    for (i = 0; i < format.rate; i++) {
-      sample = (int)(10000 * sin(2 * M_PI * freq * ((float) i/format.rate)));
 
-      //printf("Sample %d = %d\n", i, sample);
+      teste =  ((float) i / format.rate);
+      //sample = (int)(10000 * sin(2 * M_PI * freq * ((float) i/format.rate)));
 
+      //printf("Teste %d = %f\n", i, teste);
+
+      /* Gera uma onda quadrada simetrica */
+      /*
       if( sample > 0 ) {
-         sample = (int)(0.75 * 32768.0 * 1);
+         sample = 0x5fff;
       } else {
-         sample = (int)(0);
+         sample = 0;
+      }
+      */
+
+      /* Gera um pulso de 100ms */
+      /*
+      if( teste < 0.1 ) {
+         sample = 0x5fff;
+      } else {
+         sample = 0;
+      }
+      */
+
+      /* Gera uma sequencia de pulsos (10011001), cada bit tem duração de 50ms */
+      /* ESTA É UMA FORMA MUITO INEFICIENTE DE FAZER ISSO!!! */
+      if( teste < 0.05 ) {
+         sample = 0x5fff;
+      } else if(teste >= 0.15 && teste < 0.25) {
+         sample = 0x5fff;
+      } else if( teste >= 0.35 && teste < 0.45) {
+         sample = 0x5fff;
+      } else {
+         sample = 0;
       }
 
-      /* Atribui o mesmo sinal a ambos os canais */
+      /* Atribui o mesmo sinal é atribuido a ambos os canais */
       buffer[4*i] = buffer[4*i+2] = sample & 0xff;
       buffer[4*i+1] = buffer[4*i+3] = (sample >> 8) & 0xff;
    }
