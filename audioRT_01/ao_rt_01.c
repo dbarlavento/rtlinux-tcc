@@ -20,6 +20,8 @@
  *
  * 16-11-2016: Adicionados mais dois modos de saída, pulso e 8 bits.
  *
+ * 18-11-2016: Adicionadas caracteristicas de tempo real ao programa.
+ *
  * Nota: A compilação deste programa exige os parâmetros do gcc:
  * -lao
  * -ldl
