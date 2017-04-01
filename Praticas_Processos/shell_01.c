@@ -4,45 +4,61 @@
 #include <unistd.h>
 #include <sys/wait.h>
 
-/** Um pequeno shell **/
+/**
+   Um pequeno shell
+   Autor: Daniel Barlavento Gomes
+   v. 0.1: 01/04/2017
+      - Implementada a função que imprime o prompt.
+      - Implementada a função que limpa o buffer que contem o comando digitado
+         pelo usuário.
+      - Implementada a função que lê os comandos do usuário.
+      - Suporta a penas a execução de programas que estejam no mesmo diretório.
+      - Não suporta argumentos nos programas executados.
+      - Implementado o comando "exit" para sair do shell.
+      - Adição dos comentários.
+
+**/
 
 #define TRUE 1
 #define FALSE 0
-#define BUFFER_SIZE 16
-#define BT_ENTER 10
-#define PROMPT "\n-DigiteUmComando: "
+#define BUFFER_SIZE 16 //Tamanho do buffer de leitura do que é digitado pelo usuário
+#define BT_ENTER 10 //ASCII em inteiro da tecla "enter"
+#define PROMPT "\n-DigiteUmComando: " //String do prompt
 
 void typePrompt();
 void clearBuffer(char* bf, int length);
 void readCommand(char* bf, int lenght);
 
-char rdCmdBuffer[BUFFER_SIZE];
+char rdCmdBuffer[BUFFER_SIZE]; //Buffer de leitura do que é digitado pelo usuário
 
+//Inicio
 int main(int argc, char* argv[])
 {
 
    pid_t cId;
    int cStatus;
 
-   while(strcmp(rdCmdBuffer, "exit")) {
-      clearBuffer(rdCmdBuffer, BUFFER_SIZE);
-      typePrompt();
-      readCommand(rdCmdBuffer, BUFFER_SIZE);
+   while(strcmp(rdCmdBuffer, "exit")) { //Espera até o usuário digitar "exit"
+      clearBuffer(rdCmdBuffer, BUFFER_SIZE); //Limpa o buffer
+      typePrompt(); //Imprime o prompt
+      readCommand(rdCmdBuffer, BUFFER_SIZE); //Lê os comandos digitados pelo usuário
 
-      cId = fork();
+      cId = fork(); //Cria um processo filho
       if(cId != 0) {
-         wait(&cStatus);
+         wait(&cStatus); //Espera o processo filho terminar
       } else {
-         execv(rdCmdBuffer, argv);
+         /** Deve ser melhorado para suportar um comando e seus argumentos digitados pelo usuário **/
+         execv(rdCmdBuffer, argv); //Executa o programa definido no buffer
       }
    }
 
    exit(0);
 }
 
+/** Uma alternativa simples a printf **/
 void typePrompt()
 {
-   char sPrompt[21];
+   char sPrompt[21]; //Aprimorar esta variável
 
    strcpy(sPrompt, PROMPT);
 
@@ -51,6 +67,7 @@ void typePrompt()
    return;
 }
 
+/** Limpa o buffer onde são guardados os comandos digitados pelo usuário **/
 void clearBuffer(char* bf, int lenght)
 {
    int i = 0;
