@@ -1,0 +1,7 @@
+V1 é um programa para microcontroladores 8051 que estabelece uma conexão
+serial com outro dispositivo e envia uma menssagem: "8051 conectato".
+
+A conexão serial deve ser estabelecida a uma velocidade de 115000kbps.
+O envio de CR e LF serão definidos posteriormente.
+
+Num primeiro momento não serão usados os pinos de RTS e CTS. 
