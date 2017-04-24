@@ -1,0 +1,3 @@
+Conjunto de programas que testam as políticas de escalonamento suportadas pelo Linux.
+
+Os programas executam simples exibições de mensagens que confirmam sua execução.
