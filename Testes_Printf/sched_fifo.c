@@ -7,8 +7,12 @@
 
 /*
  * Este programa executa uma sucessão de prints na tela do console
- * com o valor de uma variável i, inicialmente igual a 0, a cada 1s
+ * com o valor de uma variável i, inicialmente igual a 0, em um intervalo
+ * de tempo definido pelo usuário.
  * Esta versão utiliza a política de escalonamento SCHED_FIFO.
+ * O primeiro parâmetro equivale a prioridade do processo.
+ * O segundo parâmetro equivale ao nome exibido nos printfs.
+ * O terceiro parâmetro equivale ao período de ativação do processo.
  */
 
 /* Define a precisão do timer em nanosegundos */
@@ -18,9 +22,10 @@ int main(int argc, char* argv[])
 {
     int appNum;
     int i = 0;
-    int interval;
+    int interval; //Valor em nanosegundos
     struct sched_param param;
     struct timespec t;
+    struct timespec tbuf1, tbuf2;
 
     /* Criar um interpretador melhor, esta solução é muito ruim */
 
@@ -46,11 +51,21 @@ int main(int argc, char* argv[])
     /* Inicia após 1s */
     t.tv_sec++;
 
-    for(i;; i++)
+    for(i ;; i++)
     {
+        clock_gettime(CLOCK_MONOTONIC ,&tbuf1);
+        printf("\nNanosegundos antes de dormir: %ld", tbuf1.tv_nsec);
+        /*  */
         clock_nanosleep(CLOCK_MONOTONIC, TIMER_ABSTIME, &t, NULL);
 
-        printf("\nApp %d - Shot nº: %d\n", appNum, i);
+        clock_gettime(CLOCK_MONOTONIC ,&tbuf2);
+        printf("\nNanosegundos depois de dormir: %ld", tbuf2.tv_nsec);
+
+        if( (tbuf2.tv_nsec - tbuf1.tv_nsec) <= interval) {
+            printf("\nApp %d - Shot nº: %d\n", appNum, i);
+        } else {
+            printf("\nApp %d - ERRO\n", appNum);
+        }
 
         t.tv_nsec += interval;
 

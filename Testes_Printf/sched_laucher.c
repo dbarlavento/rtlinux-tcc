@@ -5,7 +5,8 @@
 #include <sys/wait.h>
 
 /*
- * Este programa lança varias instâncias de processos.
+ * Este programa lança varias instâncias de um processo com diferentes prioridades
+ * e periodos de ativação.
  */
 
 #define TRUE 1
