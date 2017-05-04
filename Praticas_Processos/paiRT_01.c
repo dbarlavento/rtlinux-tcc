@@ -85,7 +85,7 @@ int main(int argc, char* argv[])
     /*
         Configura a política de escalonamento do processo
     */
-    if(sched_setscheduler(0, SCHED_RR, &confEscalonador) == -1) {
+    if(sched_setscheduler(0, SCHED_FIFO, &confEscalonador) == -1) {
         perror("sched_setscheduler - ERRO");
         exit(-1);
     }
