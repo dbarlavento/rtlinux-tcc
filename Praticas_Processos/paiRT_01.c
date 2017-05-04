@@ -26,6 +26,8 @@
 #include <string.h>
 #include <unistd.h>
 #include <sys/wait.h>
+#include <sys/time.h>
+#include <sys/resource.h>
 
 /*
     Define a prioridade padrão do processo
@@ -43,27 +45,37 @@
 */
 #define NSEC_PER_SEC (1000000000)
 
-void stack_prefault(void);
+void iniPilha(void);
 
 int main(int argc, char* argv[])
 {
     char optc = 0;
 
     struct sched_param confEscalonador; //Contém os parâmetros de escalonamento
+    int prioridade = PRIORIDADE_PADRAO;
+
+    pid_t idFilho;
+    int estadoFilho;
+
+    struct timespec t;
+    int intervalo = 100000000;
+    int numRepeticoes = 0;
+    int i = 0;
 
     /*
         Lê os parâmetros digitados pelo usuário
     */
     if( argc > 1) {
         while( ( optc = getopt(argc, argv, "p:" ) )
-         != -1 ) {
+                != -1 ) {
             switch( optc ) {
-                case 'p':
-                    confEscalonador.sched_priority = atoi(optarg);
-                    break;
-                default:
-                    perror("Parâmetros incorretos.");
-                    exit(-1);
+            case 'p':
+                prioridade = atoi(optarg);
+                confEscalonador.sched_priority = atoi(optarg);
+                break;
+            default:
+                perror("Parâmetros incorretos.");
+                exit(-1);
             }
         }
     } else {
@@ -73,16 +85,41 @@ int main(int argc, char* argv[])
     /*
         Configura a política de escalonamento do processo
     */
-    if(sched_setscheduler(0, SCHED_FIFO, &confEscalonador) == -1) {
+    if(sched_setscheduler(0, SCHED_RR, &confEscalonador) == -1) {
         perror("sched_setscheduler - ERRO");
         exit(-1);
     }
+
+    /*
+        Trava as posições de memória da pilha do processo
+    */
+    if(mlockall(MCL_CURRENT|MCL_FUTURE) == -1) {
+        perror("mlockall - ERRO");
+        exit(-2);
+    }
+
+    iniPilha();
+
+    idFilho = fork();
+    if(idFilho != 0) {
+        wait(&estadoFilho); //Espera o processo filho terminar
+        printf("\n*** Execução do Pai ***\n");
+        printf("\n*** Prioridade: %d\n", getpriority(PRIO_PROCESS, 0));
+        printf("\n*** Política de escalonamento: %d\n", sched_getscheduler(0));
+        exit(0);
+    } else {
+        printf("\n*** Execução do Filho ***\n");
+        printf("\n*** Prioridade: %d\n", getpriority(PRIO_PROCESS, 0));
+        printf("\n*** Política de escalonamento: %d\n", sched_getscheduler(0));
+        exit(0);
+    }
+
 }
 
 /*
     Inicializa a pilha do programa com zeros
 */
-void stack_prefault(void)
+void iniPilha(void)
 {
     unsigned char dummy[MAX_SAFE_STACK];
 
