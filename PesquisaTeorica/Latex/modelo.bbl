@@ -1,0 +1,121 @@
+% $ biblatex auxiliary file $
+% $ biblatex bbl format version 2.8 $
+% Do not modify the above lines!
+%
+% This is an auxiliary file used by the 'biblatex' package.
+% This file may safely be deleted. It will be recreated by
+% biber as required.
+%
+\begingroup
+\makeatletter
+\@ifundefined{ver@biblatex.sty}
+  {\@latex@error
+     {Missing 'biblatex' package}
+     {The bibliography requires the 'biblatex' package.}
+      \aftergroup\endinput}
+  {}
+\endgroup
+
+
+\refsection{0}
+  \sortlist[entry]{nty/global/}
+    \entry{Farines2000}{book}{}
+      \name{author}{1}{}{%
+        {{hash=04132816d748c428956e166cb3736348}{%
+           family={Farines},
+           familyi={F\bibinitperiod},
+           given={Jean-Marie},
+           giveni={J\bibinithyphendelim M\bibinitperiod}}}%
+      }
+      \list{publisher}{1}{%
+        {Departamento de Automação e Sistemas Universidade Federal de Santa Catarina}%
+      }
+      \strng{namehash}{04132816d748c428956e166cb3736348}
+      \strng{fullhash}{04132816d748c428956e166cb3736348}
+      \strng{authornamehash}{04132816d748c428956e166cb3736348}
+      \strng{authorfullhash}{04132816d748c428956e166cb3736348}
+      \field{sortinit}{F}
+      \field{sortinithash}{276475738cc058478c1677046f857703}
+      \field{labeldatesource}{year}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{title}{Sistemas de Tempo Real}
+      \field{year}{2000}
+    \endentry
+    \entry{Cyclictest2017}{online}{}
+      \name{author}{1}{}{%
+        {{hash=cccc357f85eec4a1799eb8263f434427}{%
+           family={Foundation},
+           familyi={F\bibinitperiod},
+           given={The\bibnamedelima Linux},
+           giveni={T\bibinitperiod\bibinitdelim L\bibinitperiod}}}%
+      }
+      \strng{namehash}{cccc357f85eec4a1799eb8263f434427}
+      \strng{fullhash}{cccc357f85eec4a1799eb8263f434427}
+      \strng{authornamehash}{cccc357f85eec4a1799eb8263f434427}
+      \strng{authorfullhash}{cccc357f85eec4a1799eb8263f434427}
+      \field{sortinit}{F}
+      \field{sortinithash}{276475738cc058478c1677046f857703}
+      \field{labeldatesource}{year}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{title}{Cyclitest}
+      \field{urlday}{17}
+      \field{urlmonth}{6}
+      \field{urlyear}{2017}
+      \field{year}{2017}
+      \field{urldateera}{ce}
+      \verb{url}
+      \verb https://wiki.linuxfoundation.org/realtime/documentation/howto/tools/cyclictest
+      \endverb
+    \endentry
+    \entry{Anderso2007}{thesis}{}
+      \name{author}{1}{}{%
+        {{hash=5408363b3339d55eee1acc8827fd7fdc}{%
+           family={Moreira},
+           familyi={M\bibinitperiod},
+           given={Anderson\bibnamedelimb Luiz\bibnamedelima Souza},
+           giveni={A\bibinitperiod\bibinitdelim L\bibinitperiod\bibinitdelim S\bibinitperiod}}}%
+      }
+      \list{institution}{1}{%
+        {Pós-Graduação em Ciência da Computação, Universidade Federal de Pernambuco}%
+      }
+      \strng{namehash}{5408363b3339d55eee1acc8827fd7fdc}
+      \strng{fullhash}{5408363b3339d55eee1acc8827fd7fdc}
+      \strng{authornamehash}{5408363b3339d55eee1acc8827fd7fdc}
+      \strng{authorfullhash}{5408363b3339d55eee1acc8827fd7fdc}
+      \field{sortinit}{M}
+      \field{sortinithash}{c26a05ef03e4429073ed5c825140fac3}
+      \field{labeldatesource}{year}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{bookpagination}{sheet}
+      \field{title}{Análise de Sistmas Operacionais de Tempo Real}
+      \field{type}{mathesis}
+      \field{year}{2007}
+    \endentry
+    \entry{Rostedt2007}{article}{}
+      \name{author}{1}{}{%
+        {{hash=d53c5fa2909340b08413f0eeb39d83fb}{%
+           family={Rostedt},
+           familyi={R\bibinitperiod},
+           given={Steven},
+           giveni={S\bibinitperiod}}}%
+      }
+      \strng{namehash}{d53c5fa2909340b08413f0eeb39d83fb}
+      \strng{fullhash}{d53c5fa2909340b08413f0eeb39d83fb}
+      \strng{authornamehash}{d53c5fa2909340b08413f0eeb39d83fb}
+      \strng{authorfullhash}{d53c5fa2909340b08413f0eeb39d83fb}
+      \field{sortinit}{R}
+      \field{sortinithash}{c15bc8eb6936bc6b3c8baa9e8575af53}
+      \field{labeldatesource}{year}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{Proceedings of the Linux Symposium}
+      \field{title}{Internals of the RT Patch}
+      \field{year}{2007}
+    \endentry
+  \endsortlist
+\endrefsection
+\endinput
+

@@ -1,0 +1,46 @@
+\chapter{ANÁLISE E TESTE DOS SISTEMAS}
+\label{cap:analiseemetodos}
+
+Este capítulo apresenta as principais características utilizadas na comparação dos sistemas testados e as premissas que orientam os testes executados.
+
+\section{Avaliação de Sistemas Operacionais de Tempo Real}
+\subsection{O Ambiente de teste}
+
+Na comparação entre diferentes sistemas operacionais, e mais especificamente de \textit{kernels} de tempo real,  é importante que a configuração do \textit{hardware} utilizado seja igual o no mínimo equivalente, isso garante que os resultados obtidos são consistentes e que não foram profundamente influenciados pelo \textit{hardware}.
+
+O \textit{hardware} utilizado para testar as duas soluções de tempo real escolhidas foi um \textit{netbook Acer}, modelo \textit{Aspire One} D250-1023, processador com arquitetura x86, \textit{Intel Aton} N270, \textit{clock} de 1,60GHz, memória \textit{cache} L2 de 512KB, 1GB de memória DDR2-533, disco rígido de 320GB SATA.
+
+Ambas as soluções de tempo real testadas usam como base o sistema operacional \textit{GNU/Linux}, foi escolhida a distribuição \textit{Debian} 8.8 (\textit{Jessie}) para processadores de 32 bits. A distribuição \textit{Debian} foi escolhida, dada a facilidade de se produzir um sistema com funcionalidades reduzidas, sua ampla documentação, sua grande coleção de pacotes contendo programas e bibliotecas pré compilados e por ser a base de inúmeras outras distribuições que se aplicam de servidores a sistemas embarcados.
+
+Foi considerado de grande importância produzir \textit{kernels} com configurações idênticas, com exceção das opções específicas exigidas por cada uma das soluções, para que recursos específicos não alterassem o desempenho dos sistemas. As configurações utilizadas tiveram como ponto de partida a versão \textit{vanilla} de cada \textit{kernel}. A versão utilizada do \textit{patch PREEMPT-RT} foi a 4.4.17-rt25 publicada em 25 de agosto de 2016, aplicado sobre um \textit{kernel}, \textit{vanilla}, versão 4.4.17. A versão testada do RTAI foi a 5.0.1 publicada em 15 de maio de 2017, o \textit{patch HAL} foi aplicado em um \textit{kernel}, \textit{vanilla}, versão 4.4.43.
+	
+Certas funcionalidades do \textit{kernel}, como \textit{debug}, gerenciamento de energia, paginação, e consequentemente acessos a disco, podem comprometer a previsibilidade das aplicações de tempo real, para evitar estes problemas, as funcionalidades de \textit{debug} e gerenciamento e economia de energia do \textit{kernel} foram desabilitadas, os problemas relacionados a paginação e acessos a disco foram resolvidos nas próprias aplicações como veremos mais adiante. Embora esta configuração não tenha apresentado problemas no \textit{hardware} de teste, a ausência de recursos de gerenciamento de energia inviabilizou o carregamento do \textit{kernel} em outras configurações de \textit{hardware}. Como este trabalho trata do teste de soluções de tempo real que executam sobre sistemas mono processados a funcionalidade do \textit{kernel} que da suporte a \textit{SMP} foi desabilitada.
+		
+Para que um sistema operacional possa executar aplicações de tempo real é necessário que o sistema possua suporte a relógios com uma boa granularidade e precisão, assim as opções do \textit{kernel} relacionadas aos relógios de alta precisão foram habilitadas.
+	
+\subsection{Parâmetros Utilizados na Avaliação}
+
+A avaliação e escolha de um SOTR é definida principalmente pela capacidade de suas características atenderem aos requisitos de um determinado projeto, o que pode envolver diversas variáveis que alteram o desempenho do sistema em diversas circunstâncias diferentes. Outros parâmetros relacionados a requisitos não funcionais de uma aplicação como: suporte e documentação, custo, tamanho do código, etc, corroboram com o número de possibilidades. Isso torna a comparação e escolha de um SOTR algo no mínimo confuso.
+
+- O sistema deve apresentar latência inferior a menos de 10% do \textit{deadline} das tarefas em execução.
+
+\section{Sobre os Testes Executados}
+
+\subsection{Testes Preliminares}
+
+As soluções estudadas foram submetidos a testes preliminares, que foram utilizados para identificar possíveis falhas nos processo de instalação dos sistemas como para identificar funcionalidades do \textit{kernel} que pudessem alterar o desempenho e a preempção do sistema. O principal parâmetro testado foi a latência do sistema. Os resultados obtidos com estes testes também serviram para avaliar a qualidade dos resultados obtidos com os testes desenvolvidos neste trabalho.
+
+Estes testes foram executados por meio de ferramentas recomendadas e fornecidas pelos próprios desenvolvedores dos sistemas abordados. Foram utilizadas principalmente os programas: \textit{Latency}, para testes no \textit{RTAI} e \textit{Cyclictest}, para testes no \textit{PREEMPT-RT}. O algoritmo de medição do programa \textit{Cyclictest} foi utilizado como base para os testes desenvolvidos neste trabalho.
+
+----Falar sobre o programa Latency ----
+
+O programa \textit{Cyclictest} \cite{FreeSoftware} é fornecido junto a suite \textit{rt-tests}, um conjunto de ferramentas para teste de sistemas de tempo real, desenvolvidas e mantidas pelos desenvolvedores do \textit{kernel linux} e hospedada no próprio \textit{site} do projeto.
+
+O programa \textit{Cyclictest} mede com alto grau de precisão, os resultados são fornecidos em microssegundos, a latência do sistema para um número definido de tarefas. Mostrou-se de extrema utilidade seu recurso que possibilita o rastreio de funcionalidades do \textit{kernel} que provocam aumento da latência do sistema, por meio da função \textit{FTRACER}. Este recurso foi bastante utilizado para produzir uma configuração adequada do \textit{kernel linux}.
+
+Para que os resultados das medições obtidos com os testes sejam válidos, é preciso que os testes sejam executados diversas vezes por um período de tempo, suficiente, longo e em conjunto com alguma aplicação que sobrecarregue o sistema, com a finalidade de simular o pior cenário possível para a execução de uma aplicação de tempo real. Como os programas \textit{Cyclictest} e \textit{Latency} medem a latência do sistema, um cenário adequado de sobrecarga deve fazer uso intensivo do processador, que no pior caso deve estar com 100% de utilização de forma constante durante todo o período de execução dos testes.
+A solução adotada para este problema foi a proposta por Geunsik Lim (colocar fonte). Esta abordagem, além de proporcionar o uso de 100% do processador, possui uma construção simples e independente de programas externos a maioria das distribuições \textit{Linux}.
+
+\subsection{\textit{Banchmarks}}
+
+\subsection{Métodos de Análise Utilizados}
