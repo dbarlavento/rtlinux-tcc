@@ -24,38 +24,36 @@
 \defcounter {refsection}{0}\relax 
 \contentsline {section}{\numberline {2.2}Sistemas Operacionais de Tempo Real}{10}
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {2.2.1}Padr\IeC {\~a}o POSIX}{10}
+\contentsline {subsection}{\numberline {2.2.1}Linux}{12}
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {2.2.2}Linux}{10}
+\contentsline {subsection}{\numberline {2.2.2}Implementa\IeC {\c c}\IeC {\~o}es}{12}
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {2.2.3}Implementa\IeC {\c c}\IeC {\~o}es}{10}
+\contentsline {section}{\numberline {2.3}Patch PREEMPT-RT}{12}
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {2.3}Patch PREEMPT-RT}{10}
+\contentsline {section}{\numberline {2.4}RTAI}{12}
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {2.4}RTAI}{10}
+\contentsline {chapter}{\numberline {3}AN\IeC {\'A}LISE E TESTE DOS SISTEMAS}{13}
 \defcounter {refsection}{0}\relax 
-\contentsline {chapter}{\numberline {3}AN\IeC {\'A}LISE E TESTE DOS SISTEMAS}{11}
+\contentsline {section}{\numberline {3.1}Avalia\IeC {\c c}\IeC {\~a}o de Sistemas Operacionais de Tempo Real}{13}
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {3.1}Avalia\IeC {\c c}\IeC {\~a}o de Sistemas Operacionais de Tempo Real}{11}
+\contentsline {subsection}{\numberline {3.1.1}O Ambiente de teste}{13}
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {3.1.1}O Ambiente de teste}{11}
+\contentsline {subsection}{\numberline {3.1.2}Par\IeC {\^a}metros Utilizados na Avalia\IeC {\c c}\IeC {\~a}o}{14}
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {3.1.2}Par\IeC {\^a}metros Utilizados na Avalia\IeC {\c c}\IeC {\~a}o}{12}
+\contentsline {section}{\numberline {3.2}Sobre os Testes Executados}{15}
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {3.2}Sobre os Testes Executados}{12}
+\contentsline {subsection}{\numberline {3.2.1}Testes Preliminares}{15}
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {3.2.1}Testes Preliminares}{12}
+\contentsline {subsection}{\numberline {3.2.2}\textit {Benchmarks}}{16}
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {3.2.2}\textit {Banchmarks}}{13}
+\contentsline {subsection}{\numberline {3.2.3}M\IeC {\'e}todos de An\IeC {\'a}lise Utilizados}{16}
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {3.2.3}M\IeC {\'e}todos de An\IeC {\'a}lise Utilizados}{13}
+\contentsline {chapter}{\numberline {4}RESULTADOS}{17}
 \defcounter {refsection}{0}\relax 
-\contentsline {chapter}{\numberline {4}RESULTADOS}{14}
+\contentsline {chapter}{\numberline {5}CONCLUS\IeC {\~O}ES}{18}
 \defcounter {refsection}{0}\relax 
-\contentsline {chapter}{\numberline {5}CONCLUS\IeC {\~O}ES}{15}
+\contentsline {section}{\numberline {5.1}Trabalhos Futuros}{18}
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {5.1}Trabalhos Futuros}{15}
+\contentsline {chapter}{\numberline {A}AP\IeC {\^E}NDICE}{20}
 \defcounter {refsection}{0}\relax 
-\contentsline {chapter}{\numberline {A}AP\IeC {\^E}NDICE}{17}
-\defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {A.1}Ap\IeC {\^e}ndice 1}{17}
+\contentsline {section}{\numberline {A.1}Ap\IeC {\^e}ndice 1}{20}

@@ -20,9 +20,11 @@ Para que um sistema operacional possa executar aplicações de tempo real é nec
 	
 \subsection{Parâmetros Utilizados na Avaliação}
 
-A avaliação e escolha de um SOTR é definida principalmente pela capacidade de suas características atenderem aos requisitos de um determinado projeto, o que pode envolver diversas variáveis que alteram o desempenho do sistema em diversas circunstâncias diferentes. Outros parâmetros relacionados a requisitos não funcionais de uma aplicação como: suporte e documentação, custo, tamanho do código, etc, corroboram com o número de possibilidades. Isso torna a comparação e escolha de um SOTR algo no mínimo confuso.
+A avaliação de um SOTR é definida principalmente pela capacidade de suas características atenderem aos requisitos de um determinado projeto, o que pode envolver diversas variáveis que alteram o desempenho do sistema em diversas circunstâncias diferentes. Outros parâmetros relacionados a requisitos não funcionais de uma aplicação como: suporte e documentação, custo, tamanho do código, etc, corroboram com o número de possibilidades. Isso torna a comparação entre SOTR algo, no mínimo, confuso.
 
-- O sistema deve apresentar latência inferior a menos de 10% do \textit{deadline} das tarefas em execução.
+As avaliações de desempenho mais completas de SOTR normalmente são baseadas na avaliação do sistema como aplicações destinadas a fins específicos. Estas avaliações são difíceis de generalizar e portar para outras soluções e arquiteturas de destino diferentes da proposta original dos testes. A escolha de parâmetros quantitativos que sejam comuns a maioria dos sistemas de tempo real, e que estejam diretamente relacionados a execução dos principais casos em que estes sistemas se aplicam, facilita a comparação entre as diversas soluções existentes e proporcionam uma excelente forma de avaliação dos SOTR.
+
+- ( Sugestão) O sistema deve apresentar latência inferior a menos de 10\% do \textit{deadline} das tarefas em execução.
 
 \section{Sobre os Testes Executados}
 
@@ -38,9 +40,13 @@ O programa \textit{Cyclictest} \cite{FreeSoftware} é fornecido junto a suite \t
 
 O programa \textit{Cyclictest} mede com alto grau de precisão, os resultados são fornecidos em microssegundos, a latência do sistema para um número definido de tarefas. Mostrou-se de extrema utilidade seu recurso que possibilita o rastreio de funcionalidades do \textit{kernel} que provocam aumento da latência do sistema, por meio da função \textit{FTRACER}. Este recurso foi bastante utilizado para produzir uma configuração adequada do \textit{kernel linux}.
 
-Para que os resultados das medições obtidos com os testes sejam válidos, é preciso que os testes sejam executados diversas vezes por um período de tempo, suficiente, longo e em conjunto com alguma aplicação que sobrecarregue o sistema, com a finalidade de simular o pior cenário possível para a execução de uma aplicação de tempo real. Como os programas \textit{Cyclictest} e \textit{Latency} medem a latência do sistema, um cenário adequado de sobrecarga deve fazer uso intensivo do processador, que no pior caso deve estar com 100% de utilização de forma constante durante todo o período de execução dos testes.
-A solução adotada para este problema foi a proposta por Geunsik Lim (colocar fonte). Esta abordagem, além de proporcionar o uso de 100% do processador, possui uma construção simples e independente de programas externos a maioria das distribuições \textit{Linux}.
+Para que os valores das medições, obtidos com os testes, sejam válidos, é preciso que os testes sejam executados diversas vezes por um período de tempo suficiente longo e que os recursos do sistema (entradas, saídas, CPU, etc) estejam sobrecarregados, com a finalidade de reproduzir um cenário com a pior situação possível para a execução de uma aplicação de tempo real. Como os programas \textit{Cyclictest} e \textit{Latency} medem a latência do sistema, um cenário adequado de sobrecarga é o uso intensivo do processador, que no pior caso deve estar com valores próximos de 100\% de utilização  com poucas variações durante o período de execução dos testes.
 
-\subsection{\textit{Banchmarks}}
+A solução adotada para este problema foi a proposta por Geunsik Lim (colocar fonte). Esta abordagem, além de proporcionar o uso de 100\% do processador, possui uma construção simples, e utiliza um conjunto de programas que já se encontram pré instalados na maioria das distribuições \textit{Linux}.
+
+\subsection{\textit{Benchmarks}}
+- Definir o que é um benchmark.
+
+
 
 \subsection{Métodos de Análise Utilizados}

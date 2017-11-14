@@ -1,15 +1,15 @@
-[1] Config.pm:354> INFO - This is Biber 2.7
+[0] Config.pm:354> INFO - This is Biber 2.7
 [1] Config.pm:357> INFO - Logfile is 'modelo.blg'
-[127] biber-MSWIN64:303> INFO - === 
-[217] Biber.pm:359> INFO - Reading 'modelo.bcf'
-[672] Biber.pm:832> INFO - Using all citekeys in bib section 0
-[723] Biber.pm:3670> INFO - Processing section 0
-[809] Biber.pm:3840> INFO - Looking for bibtex format file 'biblio.bib' for section 0
-[817] bibtex.pm:1435> INFO - Decoding LaTeX character macros into UTF-8
-[837] bibtex.pm:1292> INFO - Found BibTeX data source 'biblio.bib'
-[938] UCollate.pm:68> INFO - Overriding locale 'pt-BR' defaults 'normalization = NFD' with 'normalization = prenormalized'
-[938] UCollate.pm:68> INFO - Overriding locale 'pt-BR' defaults 'variable = shifted' with 'variable = non-ignorable'
-[938] Biber.pm:3499> INFO - Sorting list 'nty/global/' of type 'entry' with scheme 'nty' and locale 'pt-BR'
-[938] Biber.pm:3505> INFO - No sort tailoring available for locale 'pt-BR'
-[956] bbl.pm:608> INFO - Writing 'modelo.bbl' with encoding 'UTF-8'
-[958] bbl.pm:712> INFO - Output to modelo.bbl
+[58] biber-MSWIN64:303> INFO - === 
+[100] Biber.pm:359> INFO - Reading 'modelo.bcf'
+[319] Biber.pm:832> INFO - Using all citekeys in bib section 0
+[351] Biber.pm:3670> INFO - Processing section 0
+[386] Biber.pm:3840> INFO - Looking for bibtex format file 'biblio.bib' for section 0
+[397] bibtex.pm:1435> INFO - Decoding LaTeX character macros into UTF-8
+[407] bibtex.pm:1292> INFO - Found BibTeX data source 'biblio.bib'
+[455] UCollate.pm:68> INFO - Overriding locale 'pt-BR' defaults 'variable = shifted' with 'variable = non-ignorable'
+[455] UCollate.pm:68> INFO - Overriding locale 'pt-BR' defaults 'normalization = NFD' with 'normalization = prenormalized'
+[455] Biber.pm:3499> INFO - Sorting list 'nty/global/' of type 'entry' with scheme 'nty' and locale 'pt-BR'
+[456] Biber.pm:3505> INFO - No sort tailoring available for locale 'pt-BR'
+[464] bbl.pm:608> INFO - Writing 'modelo.bbl' with encoding 'UTF-8'
+[465] bbl.pm:712> INFO - Output to modelo.bbl
