@@ -36,13 +36,13 @@ Estes testes foram executados por meio de ferramentas recomendadas e fornecidas 
 
 ----Falar sobre o programa Latency ----
 
-O programa \textit{Cyclictest} \cite{FreeSoftware} é fornecido junto a suite \textit{rt-tests}, um conjunto de ferramentas para teste de sistemas de tempo real, desenvolvidas e mantidas pelos desenvolvedores do \textit{kernel linux} e hospedada no próprio \textit{site} do projeto.
+O programa \textit{Cyclictest} \cite{Cyclictest2017} é fornecido junto a suite \textit{rt-tests}, um conjunto de ferramentas para teste de sistemas de tempo real, desenvolvidas e mantidas pelos desenvolvedores do \textit{kernel linux} e hospedada no próprio \textit{site} do projeto.
 
 O programa \textit{Cyclictest} mede com alto grau de precisão, os resultados são fornecidos em microssegundos, a latência do sistema para um número definido de tarefas. Mostrou-se de extrema utilidade seu recurso que possibilita o rastreio de funcionalidades do \textit{kernel} que provocam aumento da latência do sistema, por meio da função \textit{FTRACER}. Este recurso foi bastante utilizado para produzir uma configuração adequada do \textit{kernel linux}.
 
 Para que os valores das medições, obtidos com os testes, sejam válidos, é preciso que os testes sejam executados diversas vezes por um período de tempo suficiente longo e que os recursos do sistema (entradas, saídas, CPU, etc) estejam sobrecarregados, com a finalidade de reproduzir um cenário com a pior situação possível para a execução de uma aplicação de tempo real. Como os programas \textit{Cyclictest} e \textit{Latency} medem a latência do sistema, um cenário adequado de sobrecarga é o uso intensivo do processador, que no pior caso deve estar com valores próximos de 100\% de utilização  com poucas variações durante o período de execução dos testes.
 
-A solução adotada para este problema foi a proposta por Geunsik Lim (colocar fonte). Esta abordagem, além de proporcionar o uso de 100\% do processador, possui uma construção simples, e utiliza um conjunto de programas que já se encontram pré instalados na maioria das distribuições \textit{Linux}.
+A solução adotada para este problema foi a proposta por \cite{GeunsikLim2017}. Esta abordagem, além de proporcionar o uso de 100\% do processador, possui uma construção simples, e utiliza um conjunto de programas que já se encontram pré instalados na maioria das distribuições \textit{Linux}.
 
 \subsection{\textit{Benchmarks}}
 - Definir o que é um benchmark.

@@ -1,7 +1,0 @@
-Programa que gera uma saída de áudio senoildal com uma frequência e duração definidos pelo ususário.
-
-Paramentros:
-1. Prioridade do programa. Valores de 0 a 99.
-2. Tempo entre eventos. Valores em nano segundos, de 10 a 1000000000.
-3. Frequência da seniode de saída.
-4. Tempo de execução da senoide.

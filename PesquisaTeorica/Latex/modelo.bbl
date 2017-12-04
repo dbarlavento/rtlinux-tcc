@@ -56,6 +56,7 @@
       \strng{authorfullhash}{cccc357f85eec4a1799eb8263f434427}
       \field{sortinit}{F}
       \field{sortinithash}{276475738cc058478c1677046f857703}
+      \field{extrayear}{1}
       \field{labeldatesource}{year}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
@@ -69,7 +70,145 @@
       \verb https://wiki.linuxfoundation.org/realtime/documentation/howto/tools/cyclictest
       \endverb
     \endentry
-    \entry{Anderso2007}{thesis}{}
+    \entry{PreemptHowTo2017}{online}{}
+      \name{author}{1}{}{%
+        {{hash=cccc357f85eec4a1799eb8263f434427}{%
+           family={Foundation},
+           familyi={F\bibinitperiod},
+           given={The\bibnamedelima Linux},
+           giveni={T\bibinitperiod\bibinitdelim L\bibinitperiod}}}%
+      }
+      \strng{namehash}{cccc357f85eec4a1799eb8263f434427}
+      \strng{fullhash}{cccc357f85eec4a1799eb8263f434427}
+      \strng{authornamehash}{cccc357f85eec4a1799eb8263f434427}
+      \strng{authorfullhash}{cccc357f85eec4a1799eb8263f434427}
+      \field{sortinit}{F}
+      \field{sortinithash}{276475738cc058478c1677046f857703}
+      \field{extrayear}{2}
+      \field{labeldatesource}{year}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{title}{HOWTO setup Linux with PREEMPT_RT properly}
+      \field{urlday}{14}
+      \field{urlmonth}{11}
+      \field{urlyear}{2017}
+      \field{year}{2017}
+      \field{urldateera}{ce}
+      \verb{url}
+      \verb https://wiki.linuxfoundation.org/realtime/documentation/howto/applications/preemptrt_setup
+      \endverb
+    \endentry
+    \entry{PreemptioModels2017}{online}{}
+      \name{author}{1}{}{%
+        {{hash=cccc357f85eec4a1799eb8263f434427}{%
+           family={Foundation},
+           familyi={F\bibinitperiod},
+           given={The\bibnamedelima Linux},
+           giveni={T\bibinitperiod\bibinitdelim L\bibinitperiod}}}%
+      }
+      \strng{namehash}{cccc357f85eec4a1799eb8263f434427}
+      \strng{fullhash}{cccc357f85eec4a1799eb8263f434427}
+      \strng{authornamehash}{cccc357f85eec4a1799eb8263f434427}
+      \strng{authorfullhash}{cccc357f85eec4a1799eb8263f434427}
+      \field{sortinit}{F}
+      \field{sortinithash}{276475738cc058478c1677046f857703}
+      \field{extrayear}{3}
+      \field{labeldatesource}{year}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{title}{Preemption Models}
+      \field{urlday}{19}
+      \field{urlmonth}{4}
+      \field{urlyear}{2017}
+      \field{year}{2017}
+      \field{urldateera}{ce}
+      \verb{url}
+      \verb https://wiki.linuxfoundation.org/realtime/documentation/technical_basics/preemption_models
+      \endverb
+    \endentry
+    \entry{RTTests2017}{online}{}
+      \name{author}{1}{}{%
+        {{hash=cccc357f85eec4a1799eb8263f434427}{%
+           family={Foundation},
+           familyi={F\bibinitperiod},
+           given={The\bibnamedelima Linux},
+           giveni={T\bibinitperiod\bibinitdelim L\bibinitperiod}}}%
+      }
+      \strng{namehash}{cccc357f85eec4a1799eb8263f434427}
+      \strng{fullhash}{cccc357f85eec4a1799eb8263f434427}
+      \strng{authornamehash}{cccc357f85eec4a1799eb8263f434427}
+      \strng{authorfullhash}{cccc357f85eec4a1799eb8263f434427}
+      \field{sortinit}{F}
+      \field{sortinithash}{276475738cc058478c1677046f857703}
+      \field{extrayear}{4}
+      \field{labeldatesource}{year}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{title}{RT-Tests}
+      \field{urlday}{14}
+      \field{urlmonth}{11}
+      \field{urlyear}{2017}
+      \field{year}{2017}
+      \field{urldateera}{ce}
+      \verb{url}
+      \verb https://wiki.linuxfoundation.org/realtime/documentation/howto/tools/rt-tests
+      \endverb
+    \endentry
+    \entry{InstallKernel2017}{online}{}
+      \name{author}{1}{}{%
+        {{hash=1cae381c203fd1241b5efcd033a26df0}{%
+           family={Gite},
+           familyi={G\bibinitperiod},
+           given={Vivek},
+           giveni={V\bibinitperiod}}}%
+      }
+      \strng{namehash}{1cae381c203fd1241b5efcd033a26df0}
+      \strng{fullhash}{1cae381c203fd1241b5efcd033a26df0}
+      \strng{authornamehash}{1cae381c203fd1241b5efcd033a26df0}
+      \strng{authorfullhash}{1cae381c203fd1241b5efcd033a26df0}
+      \field{sortinit}{G}
+      \field{sortinithash}{618d986594b7198ba52cf8b00d348f3f}
+      \field{labeldatesource}{year}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{title}{How to Compile and Install Linux Kernel v4.5 Source On a Debian / Ubuntu Linux}
+      \field{urlday}{24}
+      \field{urlmonth}{1}
+      \field{urlyear}{2017}
+      \field{year}{2017}
+      \field{urldateera}{ce}
+      \verb{url}
+      \verb https://www.cyberciti.biz/faq/debian-ubuntu-building-installing-a-custom-linux-kernel/
+      \endverb
+    \endentry
+    \entry{GeunsikLim2017}{online}{}
+      \name{author}{1}{}{%
+        {{hash=042752f887a0606066bcaadf76b71979}{%
+           family={Lim},
+           familyi={L\bibinitperiod},
+           given={Geunsik},
+           giveni={G\bibinitperiod}}}%
+      }
+      \strng{namehash}{042752f887a0606066bcaadf76b71979}
+      \strng{fullhash}{042752f887a0606066bcaadf76b71979}
+      \strng{authornamehash}{042752f887a0606066bcaadf76b71979}
+      \strng{authorfullhash}{042752f887a0606066bcaadf76b71979}
+      \field{sortinit}{L}
+      \field{sortinithash}{7bba64db83423e3c29ad597f3b682cf3}
+      \field{labeldatesource}{year}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{title}{Worst Case Latency Test Scenarios}
+      \field{urlday}{14}
+      \field{urlmonth}{11}
+      \field{urlyear}{2017}
+      \field{year}{2017}
+      \field{urldateera}{ce}
+      \verb{url}
+      \verb https://wiki.linuxfoundation.org/realtime/documentation/howto/tools/worstcaselatency
+      \endverb
+    \endentry
+    \entry{Anderson2007}{thesis}{}
       \name{author}{1}{}{%
         {{hash=5408363b3339d55eee1acc8827fd7fdc}{%
            family={Moreira},

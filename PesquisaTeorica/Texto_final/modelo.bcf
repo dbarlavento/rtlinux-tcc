@@ -2235,11 +2235,6 @@
     <bcf:datasource type="file" datatype="bibtex">biblio.bib</bcf:datasource>
   </bcf:bibdata>
   <bcf:section number="0">
-    <bcf:citekey order="0">*</bcf:citekey>
-    <bcf:citekey order="1">Rostedt2007</bcf:citekey>
-    <bcf:citekey order="2">Rostedt2007</bcf:citekey>
-    <bcf:citekey order="3">Cyclictest2017</bcf:citekey>
-    <bcf:citekey order="4">GeunsikLim2017</bcf:citekey>
   </bcf:section>
   <bcf:sortlist section="0" name="nty/global/" type="entry" sortscheme="nty" sortnamekeyscheme="global" labelprefix="">
   <bcf:sorting>

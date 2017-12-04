@@ -44,10 +44,10 @@
   <internal package="biblatex" priority="9" active="0">
     <generic>latex</generic>
     <provides type="dynamic">
-      <file>modelo.bcf</file>
+      <file>TCC_Daniel.bcf</file>
     </provides>
     <requires type="dynamic">
-      <file>modelo.bbl</file>
+      <file>TCC_Daniel.bbl</file>
     </requires>
     <requires type="static">
       <file>blx-dm.def</file>
@@ -69,19 +69,19 @@
     <generic>biber</generic>
     <cmdline>
       <binary>biber</binary>
-      <infile>modelo</infile>
+      <infile>TCC_Daniel</infile>
     </cmdline>
     <input>
-      <file>modelo.bcf</file>
+      <file>TCC_Daniel.bcf</file>
     </input>
     <output>
-      <file>modelo.bbl</file>
+      <file>TCC_Daniel.bbl</file>
     </output>
     <provides type="dynamic">
-      <file>modelo.bbl</file>
+      <file>TCC_Daniel.bbl</file>
     </provides>
     <requires type="dynamic">
-      <file>modelo.bcf</file>
+      <file>TCC_Daniel.bcf</file>
     </requires>
     <requires type="editable">
       <file>biblio.bib</file>

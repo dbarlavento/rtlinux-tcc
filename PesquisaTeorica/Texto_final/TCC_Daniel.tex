@@ -1,0 +1,181 @@
+\NeedsTeXFormat{LaTeX2e}
+%-----------------------------------------------------------
+\documentclass[a4paper,12pt]{monografia}
+\usepackage[brazil]{babel}
+\usepackage[utf8]{inputenc}
+\usepackage[T1]{fontenc}
+\usepackage{indentfirst}
+\usepackage{hyphenat}
+\usepackage{csquotes}
+\usepackage{courier}
+\usepackage{graphicx}
+\usepackage{listings}
+\usepackage{color}
+\usepackage[toc,acronym]{glossaries}
+\usepackage[backend=biber, style=abnt]{biblatex} 
+
+% !!! SHARELATEX Workaround para referências ABNT (Deve-se colocar os sobrenomes em maiúscula no .bib)
+%\usepackage[backend=biber, style=authortitle]{biblatex} % Descomente se estiver usando Sharelatex
+\usepackage[hidelinks]{hyperref} % Torna os links da referência clicáveis
+\setlength{\bibhang}{0pt}
+
+% === Adição do arquivo de bibliografia
+\addbibresource{biblio.bib}
+%\renewcommand*{\nameyeardelim}{\addcomma\space} % estilização para citações autor/ano
+
+% === Estilo para trechos de códigos
+\definecolor{codebg}{RGB}{240,240,240}
+\lstdefinestyle{codigo}{
+    backgroundcolor=\color{codebg},
+    keywordstyle=\color{blue},
+    basicstyle=\footnotesize,
+    breakatwhitespace=false,         
+    breaklines=true,                 
+    captionpos=b,                    
+    keepspaces=true,                 
+    numbers=left,                    
+    numbersep=5pt,                  
+    showspaces=false,                
+    showstringspaces=false,
+    showtabs=false,                  
+    tabsize=2
+}
+ 
+\lstset{style=codigo}
+
+% === Gerar o glossário e lista de abreviaturas (Opcional)
+\makeglossaries
+\input{abreviaturas}
+\input{glossario}
+
+% === Comando para imagens onde se deve destacar a fonte
+\newcommand*{\captionsource}[2]{%
+  \caption[{#1}]{%
+    #1%
+    \\\hspace{\linewidth}%
+    \textbf{Fonte:} #2%
+  }%
+}
+
+\begin{document}
+
+% === Título e Dados do Autor 
+\titulo{COLOQUE SEU TÍTULO AQUI}
+%\subtitulo{Subtítulo} % opcional
+\autor{SEU NOME AQUI} \nome{Primeironome} \ultimonome{Ultimonome}
+
+% === Curso e Grau
+\bacharelado \curso{Tecnologia em Análise e Desenvolvimento de Sistemas} \ano{\textbf{YYYY}}
+\data{DD/MM/YYYY} % data da aprovação
+\cidade{Cidade}
+\estado{Estado}
+
+% === Informações sobre a Instituição
+\instituicao{INSTITUTO FEDERAL DE EDUCAÇÃO, CIÊNCIA E TECNOLOGIA DE PERNAMBUCO} \sigla{IFPE}
+\unidadeacademica{DEPARTAMENTO ACADÊMICO DE SISTEMA, PROCESSOS E CONTROLES ELETRO-ELETRÔNICO}
+
+% === Informações obtidas na Biblioteca
+%\CDU{XXX.XX} \areas{1.???  2.???}
+%\npaginas{xx}  % total de páginas do trabalho
+
+% === Nomes do Orientador, 1o. Examinador Interno e 2o. Examinador Externo
+\orientador{Orientador}
+%\coorientador{Nome do Co-orientador} % opcional
+
+\examinadorum{Examinador Interno 1}
+\examinadordois{Examinador Externo 2}
+%\examinadortres{Nome do Examinador 3}
+%\examinadorquatro{Nome do Examinador 4}
+
+% === Títulos do Orientador, 1o. e 2o. Examinadores
+\ttorientador{Mestre}
+%\ttcoorientador{Título do Co-orientador} % se digitado \coorientador
+
+\ttexaminadorum{Doutor}
+\ttexaminadordois{Doutor}
+%\ttexaminadortres{Título do Examinador 3}
+%\ttexaminadorquatro{Título do Examinador 4}
+
+% === Funções do 1o. e 2o. Examinadores
+\funcaoexaminadorum{Professor do Instituto Federal de Pernambuco}
+\funcaoexaminadordois{Professor do Curso de Sistemas de Informações da Universidade}
+
+\maketitle
+
+% === Dedicatória (Opcional)
+\begin{dedicatoria}
+Dedico a  minha família, por todo o apoio e confiança.
+\end{dedicatoria}
+\maketitle
+
+% === Agradecimentos (Opcional)
+%\agradecimento{AGRADECIMENTOS}
+% Digite seu texto de agradecimento aqui
+%\newpage
+% ou inclua um arquivo .tex como mostrado abaixo
+\include{agradecimentos}
+\newpage
+
+% === Epígrafe (Opcional)
+\begin{epigrafe}
+``Lembra que o sono é sagrado e alimenta de horizontes o tempo acordado de viver''.\\
+\hfill Beto Guedes (Amor de Índio)
+\end{epigrafe}
+
+% === Inclua seu resumo em Português
+%\resumo{Resumo}
+% Digite seu resumo aqui
+%\noindent Palavras-chave:
+% ou inclua um arquivo .tex como mostrado abaixo
+\input{resumo}
+
+% === Digite aqui o seu resumo em Inglês
+%\resumo{Abstract}
+% Digite seu resumo aqui
+%\noindent Keywords:
+% ou inclua um arquivo .tex como mostrado abaixo
+\input{abstract}
+
+% === Ou digite aqui o seu resumo em Francês
+%\resumo{Résumé}
+% Digite seu resumo aqui
+%\noindent Mots-clés: 
+% ou inclua um arquivo .tex como mostrado abaixo
+%\input{resume}
+
+% === Lista de figuras(Opcional), lista de tabelas(Opcional), lista de abreviações(Opcional) e sumário
+%\listoffigures \thispagestyle{empty}
+%\listoftables \thispagestyle{empty}
+%\printglossary[type=\acronymtype]
+\tableofcontents
+
+% !!! Início do Conteúdo
+\pagestyle{ruledheader}
+
+% === Hifenização
+% Colocar lista de palavras que não devem ser separadas ou que não estão no dicionario portuguÃªs.
+\hyphenation{ Hardware Software }
+
+% === Capítulos
+% A partir daqui coloque seus capítulos. Sugere-se que eles sejam inseridos com o comando \input
+% Da seguinte maneira: (Devem estar na mesma pasta deste arquivo)
+
+\input{cap01_introducao}
+\input{cap02_estadoarte}
+\input{cap03_materiaismetodos}
+\input{cap04_resultados}
+\input{cap05_conclusoes}
+
+% === Bibliografia
+\printbibliography % arquivos com as entradas bib.
+
+% === Glossário (Opcional)
+\printglossary
+
+% === Apêndices (Opcional)
+\appendix
+\input{apendices}					
+
+% !!! Fim do documento
+\end{document}
+
