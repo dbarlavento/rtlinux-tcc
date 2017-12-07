@@ -16,5 +16,209 @@
   {}
 \endgroup
 
+
+\refsection{0}
+  \sortlist[entry]{nty/global/}
+    \entry{Angela2013}{online}{}
+      \name{author}{1}{}{%
+        {{hash=2a6e518e0e842db8bb4ac27b3aca1276}{%
+           family={Caicedo},
+           familyi={C\bibinitperiod},
+           given={Angela},
+           giveni={A\bibinitperiod}}}%
+      }
+      \strng{namehash}{2a6e518e0e842db8bb4ac27b3aca1276}
+      \strng{fullhash}{2a6e518e0e842db8bb4ac27b3aca1276}
+      \strng{authornamehash}{2a6e518e0e842db8bb4ac27b3aca1276}
+      \strng{authorfullhash}{2a6e518e0e842db8bb4ac27b3aca1276}
+      \field{sortinit}{C}
+      \field{sortinithash}{095692fd22cc3c74d7fe223d02314dbd}
+      \field{labeldatesource}{year}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{title}{Managing Multiple Screens in JavaFX}
+      \field{urlday}{3}
+      \field{urlmonth}{10}
+      \field{urlyear}{2016}
+      \field{year}{2013}
+      \field{urldateera}{ce}
+      \verb{url}
+      \verb https://blogs.oracle.com/acaicedo/entry/managing_multiple_screens_in_javafx1
+      \endverb
+    \endentry
+    \entry{Robert2007}{article}{}
+      \name{author}{1}{}{%
+        {{hash=d011a3312ec2b8a4cfad61b23becf2b6}{%
+           family={Eckstein},
+           familyi={E\bibinitperiod},
+           given={Robert},
+           giveni={R\bibinitperiod}}}%
+      }
+      \strng{namehash}{d011a3312ec2b8a4cfad61b23becf2b6}
+      \strng{fullhash}{d011a3312ec2b8a4cfad61b23becf2b6}
+      \strng{authornamehash}{d011a3312ec2b8a4cfad61b23becf2b6}
+      \strng{authorfullhash}{d011a3312ec2b8a4cfad61b23becf2b6}
+      \field{sortinit}{E}
+      \field{sortinithash}{07bbd5a529b5beaa311df5be05b874bc}
+      \field{labeldatesource}{year}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{Oracle Technology Network}
+      \field{title}{Java SE Application Design With MVC}
+      \field{year}{2007}
+    \endentry
+    \entry{Farines2000}{book}{}
+      \name{author}{1}{}{%
+        {{hash=04132816d748c428956e166cb3736348}{%
+           family={Farines},
+           familyi={F\bibinitperiod},
+           given={Jean-Marie},
+           giveni={J\bibinithyphendelim M\bibinitperiod}}}%
+      }
+      \list{publisher}{1}{%
+        {Departamento de Automação e Sistemas da Universidade Federal de Santa Catariana}%
+      }
+      \strng{namehash}{04132816d748c428956e166cb3736348}
+      \strng{fullhash}{04132816d748c428956e166cb3736348}
+      \strng{authornamehash}{04132816d748c428956e166cb3736348}
+      \strng{authorfullhash}{04132816d748c428956e166cb3736348}
+      \field{sortinit}{F}
+      \field{sortinithash}{276475738cc058478c1677046f857703}
+      \field{labeldatesource}{year}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{title}{Sistemas de Tempo Real}
+      \field{year}{2000}
+    \endentry
+    \entry{FreeSoftware}{online}{}
+      \name{author}{1}{}{%
+        {{hash=e33da66a407ca1018cf891c629b97c9f}{%
+           family={Foundation},
+           familyi={F\bibinitperiod},
+           given={Free\bibnamedelima Software},
+           giveni={F\bibinitperiod\bibinitdelim S\bibinitperiod}}}%
+      }
+      \strng{namehash}{e33da66a407ca1018cf891c629b97c9f}
+      \strng{fullhash}{e33da66a407ca1018cf891c629b97c9f}
+      \strng{authornamehash}{e33da66a407ca1018cf891c629b97c9f}
+      \strng{authorfullhash}{e33da66a407ca1018cf891c629b97c9f}
+      \field{sortinit}{F}
+      \field{sortinithash}{276475738cc058478c1677046f857703}
+      \field{labeldatesource}{year}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{title}{O que é um software livre?}
+      \field{urlday}{16}
+      \field{urlmonth}{2}
+      \field{urlyear}{2017}
+      \field{year}{2016}
+      \field{urldateera}{ce}
+      \verb{url}
+      \verb https://www.gnu.org/philosophy/free-sw.html
+      \endverb
+    \endentry
+    \entry{StatisticBrain2017}{online}{}
+      \name{author}{1}{}{%
+        {{hash=80fd20c5f8dc519a1a691207a14bce7b}{%
+           family={Group},
+           familyi={G\bibinitperiod},
+           given={Statistic\bibnamedelima Brain},
+           giveni={S\bibinitperiod\bibinitdelim B\bibinitperiod}}}%
+      }
+      \strng{namehash}{80fd20c5f8dc519a1a691207a14bce7b}
+      \strng{fullhash}{80fd20c5f8dc519a1a691207a14bce7b}
+      \strng{authornamehash}{80fd20c5f8dc519a1a691207a14bce7b}
+      \strng{authorfullhash}{80fd20c5f8dc519a1a691207a14bce7b}
+      \field{sortinit}{G}
+      \field{sortinithash}{618d986594b7198ba52cf8b00d348f3f}
+      \field{labeldatesource}{year}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{title}{Attention Span Statistics}
+      \field{urlday}{17}
+      \field{urlmonth}{2}
+      \field{urlyear}{2017}
+      \field{year}{2016}
+      \field{urldateera}{ce}
+      \verb{url}
+      \verb http://www.statisticbrain.com/attention-span-statistics
+      \endverb
+    \endentry
+    \entry{Scott2014}{online}{}
+      \name{author}{1}{}{%
+        {{hash=80137d20f6a8ccba48d2339de92dd6f5}{%
+           family={Hommel},
+           familyi={H\bibinitperiod},
+           given={Scott},
+           giveni={S\bibinitperiod}}}%
+      }
+      \strng{namehash}{80137d20f6a8ccba48d2339de92dd6f5}
+      \strng{fullhash}{80137d20f6a8ccba48d2339de92dd6f5}
+      \strng{authornamehash}{80137d20f6a8ccba48d2339de92dd6f5}
+      \strng{authorfullhash}{80137d20f6a8ccba48d2339de92dd6f5}
+      \field{sortinit}{H}
+      \field{sortinithash}{2f664b453ec75da1fe3804ca92633405}
+      \field{labeldatesource}{year}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{title}{Implementing JavaFX Best Practices}
+      \field{urlday}{21}
+      \field{urlmonth}{9}
+      \field{urlyear}{2016}
+      \field{year}{2014}
+      \field{urldateera}{ce}
+      \verb{url}
+      \verb http://docs.oracle.com/javafx/2/best_practices/jfxpub-best_practices.htm
+      \endverb
+    \endentry
+    \entry{Anderson2007}{thesis}{}
+      \name{author}{1}{}{%
+        {{hash=8300d39822cefb9b78946a75345ef38e}{%
+           family={Moreira},
+           familyi={M\bibinitperiod},
+           given={Andeson\bibnamedelimb Luiz\bibnamedelima Souza},
+           giveni={A\bibinitperiod\bibinitdelim L\bibinitperiod\bibinitdelim S\bibinitperiod}}}%
+      }
+      \list{institution}{1}{%
+        {Universidade Federal De Pernambuco}%
+      }
+      \strng{namehash}{8300d39822cefb9b78946a75345ef38e}
+      \strng{fullhash}{8300d39822cefb9b78946a75345ef38e}
+      \strng{authornamehash}{8300d39822cefb9b78946a75345ef38e}
+      \strng{authorfullhash}{8300d39822cefb9b78946a75345ef38e}
+      \field{sortinit}{M}
+      \field{sortinithash}{c26a05ef03e4429073ed5c825140fac3}
+      \field{labeldatesource}{year}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{title}{Análise de Sistemas Operacionais de Tempo Real}
+      \field{type}{Mestrado}
+      \field{year}{2007}
+    \endentry
+    \entry{Roger2011}{book}{}
+      \name{author}{1}{}{%
+        {{hash=5622f69c9372e97f01330dfc7cd394fe}{%
+           family={Pressman},
+           familyi={P\bibinitperiod},
+           given={Roger\bibnamedelima S.},
+           giveni={R\bibinitperiod\bibinitdelim S\bibinitperiod}}}%
+      }
+      \list{publisher}{1}{%
+        {McGraw Hill}%
+      }
+      \strng{namehash}{5622f69c9372e97f01330dfc7cd394fe}
+      \strng{fullhash}{5622f69c9372e97f01330dfc7cd394fe}
+      \strng{authornamehash}{5622f69c9372e97f01330dfc7cd394fe}
+      \strng{authorfullhash}{5622f69c9372e97f01330dfc7cd394fe}
+      \field{sortinit}{P}
+      \field{sortinithash}{24100cef455d7974167575052c29146e}
+      \field{labeldatesource}{year}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{title}{Engenharia de Software: Uma abordagem profissional}
+      \field{year}{2011}
+    \endentry
+  \endsortlist
+\endrefsection
 \endinput
 
