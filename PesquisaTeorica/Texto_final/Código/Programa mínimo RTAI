@@ -1,0 +1,34 @@
+/* Carregando as bibliotecas */
+#include <stdio.h>
+#include <stdlib.h>
+#include <unistd.h>
+#include <fcntl.h>
+#include <sys/mman.h>
+#include <rtai_lxrt.h>
+
+int main (void) {
+	
+	/* Declara uma tarefa de tempo real */
+	RT_TASK *tarefa;
+
+	/* Configura os parametros de escalonamento */
+	tarefa = rt_task_init_schmod( id, 2, 0, 0, SCHED_FIFO, 0x1 );
+
+	/* Configura a tarefa como uma tarefa periódica */
+	rt_task_make_periodic_relative_ns( tarefa, delay, frequencia );
+	
+	/* Configura a tarefa como rígida */
+	rt_make_hard_real_time();
+
+	while( 1 ) {
+		
+		/* Espera por um tempo igual ao definido por frequencia */
+		rt_task_wait_period();
+
+		computacao();
+	}
+
+	/* Remove a tarefa criada */
+	rt_task_delete( tarefa );
+	return 0;
+}

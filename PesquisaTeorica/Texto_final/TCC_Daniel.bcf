@@ -2235,6 +2235,19 @@
     <bcf:datasource type="file" datatype="bibtex">biblio.bib</bcf:datasource>
   </bcf:bibdata>
   <bcf:section number="0">
+    <bcf:citekey order="1">Rostedt2007</bcf:citekey>
+    <bcf:citekey order="2">Laplante2012</bcf:citekey>
+    <bcf:citekey order="3">Farines2000</bcf:citekey>
+    <bcf:citekey order="4">Farines2000</bcf:citekey>
+    <bcf:citekey order="5">Laplante2012</bcf:citekey>
+    <bcf:citekey order="6">Laplante2012</bcf:citekey>
+    <bcf:citekey order="7">Kopetz</bcf:citekey>
+    <bcf:citekey order="8">Farines2000</bcf:citekey>
+    <bcf:citekey order="9">Tanenbaum2009</bcf:citekey>
+    <bcf:citekey order="10">Barry2016</bcf:citekey>
+    <bcf:citekey order="11">Priberam</bcf:citekey>
+    <bcf:citekey order="12">Rostedt2007</bcf:citekey>
+    <bcf:citekey order="13">cfs</bcf:citekey>
     <bcf:citekey order="0">*</bcf:citekey>
   </bcf:section>
   <bcf:sortlist section="0" name="nty/global/" type="entry" sortscheme="nty" sortnamekeyscheme="global" labelprefix="">

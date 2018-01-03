@@ -1,0 +1,74 @@
+
+/* Carregando as bibliotecas */
+#include <stdlib.h>
+#include <stdio.h>
+#include <time.h>
+#include <sched.h>
+#include <sys/mman.h>
+#include <string.h>
+
+/* Definir a prioridade da tarefa */
+#define PRIORIDADE (90)
+
+/* Definir o tamanho da pilha do programa */
+#define MAX_SAFE_STACK (8*1024)
+
+/* Definir nanosegundos */
+#define NSEG_POR_SEG (1000000000)
+
+/* Inicializa toda a pilha do programa com zeros */
+void stack_prefault(void) {
+	unsigned char pilha[MAX_SAFE_STACK];
+   memset(pilha, 0, MAX_SAFE_STACK);
+    return;
+}
+
+int main(int argc, char* argv[])
+{
+	unsigned int i = 0;
+   struct timespec t;
+   struct sched_param param;
+   int periodo = 50000; /* 50us */
+
+   /* Declara a sí mesma como um tarefa de tempo real */
+   param.sched_priority = PRIORIDADE;
+   if(sched_setscheduler(0, SCHED_FIFO, &param) == -1) {
+		perror("sched_setscheduler falhou");
+      exit(-1);
+   }
+
+	/* Trava a memória do programa para que não seja páginada */
+   if(mlockall(MCL_CURRENT|MCL_FUTURE) == -1) {
+		perror("mlockall falhou");
+      exit(-2);
+   }
+
+   /* Pre-fault our stack */
+   stack_prefault();
+
+	/* Obtem o valor do tempo atual e salva em t */
+   clock_gettime(CLOCK_MONOTONIC ,&t);
+
+   /* Faz a tarefa iniciar após 1 segundo */
+   t.tv_sec++;
+
+   while(1) {
+		/* Suspende a execução até o proximo período */
+      clock_nanosleep(CLOCK_MONOTONIC, TIMER_ABSTIME, &t, NULL);
+
+      /* Aqui realiza alguma computação útil*/
+		i++;
+		printf("\nvalor de i: %d\n", i);
+      
+		/* Calcula o momento da próxima ativação */
+      t.tv_nsec += intervalo;
+
+		/* Esse loop ajusta os valores de t
+		 * para que fiquem distribuidos da
+		 * forma correta entre os elementos da struct */
+      while (t.tv_nsec >= NSEG_POR_SEG) {
+			t.tv_nsec -= NSEG_POR_SEG;
+         t.tv_sec++;
+      }
+   }
+}

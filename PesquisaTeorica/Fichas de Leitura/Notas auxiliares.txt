@@ -1,0 +1,27 @@
+\subsection{Determinismo, Previsibilidade}
+Um SOTR é dito determinístico quando fornece mecanismos que tornam possível ao desenvolvedor conhecer os valores de tempo máximo de execução de suas chamadas de sistema, os valores máximos das latências provocadas pelas operações internas do sistema e os valores de tempo relacionados as ações das ATR. É importante observar que estes valores de tempo podem variar de acordo com a arquitetura do processador em que o sistema é executado, com o código gerado pelo compilador utilizado para produzir o sistema, com os algoritmos utilizados nos processos internos do sistema e com a qualidade das suas respectivas implementações. E dito previsível quando fornece garantias de que seu comportamento interno e os valores de tempo relacionados sempre estarão dentro de limites bem definidos qualquer que seja a carga a que esteja submetido. Também de garantir que as ATR sempre sejam executadas respeitando os prazos definidos pelo pior caso de tempo de execução (\textit{Worst Case Execution Time} \gls{wcet} da mesma.
+
+Como geralmente são sistemas reativos, é comum que SOTR lidem com interrupções, sejam provocadas por estímulos externos, sejam provocados por atividades concorrentes. A latência de interrupção corresponde ao intervalo de tempo decorrido entre a chegada de um sinal de interrupção ao processador e o início da rotina de tratamento correspondente. É característica desejável de um SOTR que este intervalo de tempo seja o menor possível.
+
+A latência por troca de contexto é uma característica intrínseca ao escalonador do sistema e surge quando ele alterna o uso da CPU entre os diferentes processos em atividade. Pode ser definida como o intervalo de tempo decorrido entre o momento em que um processo é interrompido e o momento em que um novo processo executa sua primeira linha de código. Bons algoritmos de escalonamento, e consequentemente suas implementações, devem comutar a execução de tarefas no menor tempo possível evitando assim a sobrecarga da CPU com esta tarefa.
+
+Embora o senso comum nos diga que um SOTR deva reduzir a latência entre um estímulos e suas respectivas respostas e aumentar a velocidade do sistema como um todo, provê estas características não são seu principal objetivo, embora sejam bastante desejáveis, e seus valores são de grande importância no que diz respeito ao atendimento de requisitos relacionados com a responsividade do sistema ou seja ao ser submetido a um estímulo, interno ou externo, um SOTR, deve garantir que uma resposta deve ser rápida o suficiente para atender a estes requisitos.
+
+São características comuns das aplicações de tempo real: a execução de porções de código que não possuem restrições temporais, execução de tarefas concorrentes, realizar operações que envolvam a passagem do tempo e lidar com periféricos projetados para atender a necessidades específicas. Assim para que os SOTR possam facilitar o desenvolvimento e atender plenamente as necessidades das aplicações de tempo real, é necessário que o SOTR disponibilize para os projetistas e aplicações um conjunto mínimo de funcionalidades.
+
+Com o aumento das interações dos sistemas de tempo real com os usuários por meio de: interfaces gráficas, IHM, e sistemas SCADA, e com outros sistemas 
+computacionais como: aplicações web, banco de dados e aplicativos para dispositivos moveis, uma grande quantidade de código que não possui restrições rigorosas 
+de tempo pode estar presente nas aplicações de tempo real. Para que estas funcionalidades possam ser executadas os SOTR devem fornecer suporte aos componentes 
+básicos presentes na maior parte dos SOPG como: programação concorrente, suporte a escrita de drivers para dispositivos, suporte a interface gráfica (GUI), 
+acesso a internet etc.
+
+Dada a complexidade de alguns sistemas de tempo real é comum que boa parte dos programas que o compõem sejam implementados de forma concorrente.
+ Programas concorrentes são compostos por múltiplas \textit{threads} que executam tarefas específicas e, em muitos casos, compartilham  recursos, 
+comunicam-se e sincronizam sua execução umas com as outras. Duas abordagens são comumente usadas como solução no projeto de programas concorrentes e 
+a interação entre \textit{threads}, troca de mensagens e variáveis compartilhadas. As duas soluções são equivalentes, cada uma com sua particularidade, 
+vantagens e desvantagens, e qualquer programa concorrente pode ser implementado usando-se ou uma ou outra. No entanto, é preciso que durante o projeto de 
+programas concorrentes a solução adotada seja bem avaliada. É comum que soluções baseadas no compartilhamento de memória seja mais eficiente quando o
+ processamento dos dados ocorrem em um único hardware. Já em sistemas distribuídos, o uso de troca de mensagens torna a construção da aplicação mais prática e 
+natural. É importante salientar que a solução escolhida e a correição das respectivas implementações não garantem qualquer correção temporal da solução 
+implementada, essa só pode ser garantida pelo escalonador e pela capacidade do sistema de atender aos requisitos temporais. Excetuando-se os SOTR mais simples, 
+ambas as soluções para implementação de programas concorrentes são suportadas por SOTR.

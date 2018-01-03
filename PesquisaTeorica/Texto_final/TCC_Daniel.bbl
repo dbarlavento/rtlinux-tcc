@@ -19,53 +19,59 @@
 
 \refsection{0}
   \sortlist[entry]{nty/global/}
-    \entry{Angela2013}{online}{}
-      \name{author}{1}{}{%
-        {{hash=2a6e518e0e842db8bb4ac27b3aca1276}{%
-           family={Caicedo},
-           familyi={C\bibinitperiod},
-           given={Angela},
-           giveni={A\bibinitperiod}}}%
+    \entry{Tan2009}{article}{}
+      \name{author}{2}{}{%
+        {{hash=c117ec55fe53ab5334d87490baf00239}{%
+           family={Anh},
+           familyi={A\bibinitperiod},
+           given={Tran\bibnamedelimb Nguyen\bibnamedelima Bao},
+           giveni={T\bibinitperiod\bibinitdelim N\bibinitperiod\bibinitdelim B\bibinitperiod}}}%
+        {{hash=c86ce3716eedcb10d03e83f3ad740c59}{%
+           family={Tan},
+           familyi={T\bibinitperiod},
+           given={Su-Lim},
+           giveni={S\bibinithyphendelim L\bibinitperiod}}}%
       }
-      \strng{namehash}{2a6e518e0e842db8bb4ac27b3aca1276}
-      \strng{fullhash}{2a6e518e0e842db8bb4ac27b3aca1276}
-      \strng{authornamehash}{2a6e518e0e842db8bb4ac27b3aca1276}
-      \strng{authorfullhash}{2a6e518e0e842db8bb4ac27b3aca1276}
-      \field{sortinit}{C}
-      \field{sortinithash}{095692fd22cc3c74d7fe223d02314dbd}
+      \list{publisher}{1}{%
+        {IEEE}%
+      }
+      \strng{namehash}{565067b6f4ce621b6d955bf0743ab20d}
+      \strng{fullhash}{565067b6f4ce621b6d955bf0743ab20d}
+      \strng{authornamehash}{565067b6f4ce621b6d955bf0743ab20d}
+      \strng{authorfullhash}{565067b6f4ce621b6d955bf0743ab20d}
+      \field{sortinit}{A}
+      \field{sortinithash}{3248043b5fe8d0a34dab5ab6b8d4309b}
       \field{labeldatesource}{year}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
-      \field{title}{Managing Multiple Screens in JavaFX}
-      \field{urlday}{3}
-      \field{urlmonth}{10}
-      \field{urlyear}{2016}
-      \field{year}{2013}
-      \field{urldateera}{ce}
-      \verb{url}
-      \verb https://blogs.oracle.com/acaicedo/entry/managing_multiple_screens_in_javafx1
-      \endverb
+      \field{journaltitle}{IEEE micro}
+      \field{number}{5}
+      \field{title}{Real-time operating systems for small microcontrollers}
+      \field{volume}{29}
+      \field{year}{2009}
     \endentry
-    \entry{Robert2007}{article}{}
+    \entry{Barry2016}{book}{}
       \name{author}{1}{}{%
-        {{hash=d011a3312ec2b8a4cfad61b23becf2b6}{%
-           family={Eckstein},
-           familyi={E\bibinitperiod},
-           given={Robert},
+        {{hash=140a28441c8f04c62888e644c6ec1866}{%
+           family={Berry},
+           familyi={B\bibinitperiod},
+           given={Richard},
            giveni={R\bibinitperiod}}}%
       }
-      \strng{namehash}{d011a3312ec2b8a4cfad61b23becf2b6}
-      \strng{fullhash}{d011a3312ec2b8a4cfad61b23becf2b6}
-      \strng{authornamehash}{d011a3312ec2b8a4cfad61b23becf2b6}
-      \strng{authorfullhash}{d011a3312ec2b8a4cfad61b23becf2b6}
-      \field{sortinit}{E}
-      \field{sortinithash}{07bbd5a529b5beaa311df5be05b874bc}
+      \list{publisher}{1}{%
+        {Real Time Engineers Ltd.}%
+      }
+      \strng{namehash}{140a28441c8f04c62888e644c6ec1866}
+      \strng{fullhash}{140a28441c8f04c62888e644c6ec1866}
+      \strng{authornamehash}{140a28441c8f04c62888e644c6ec1866}
+      \strng{authorfullhash}{140a28441c8f04c62888e644c6ec1866}
+      \field{sortinit}{B}
+      \field{sortinithash}{5f6fa000f686ee5b41be67ba6ff7962d}
       \field{labeldatesource}{year}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
-      \field{journaltitle}{Oracle Technology Network}
-      \field{title}{Java SE Application Design With MVC}
-      \field{year}{2007}
+      \field{title}{Mastering the FreeRTOS Real Time Kernel}
+      \field{year}{2016}
     \endentry
     \entry{Farines2000}{book}{}
       \name{author}{1}{}{%
@@ -90,86 +96,210 @@
       \field{title}{Sistemas de Tempo Real}
       \field{year}{2000}
     \endentry
-    \entry{FreeSoftware}{online}{}
+    \entry{LinuxCyclictest2017}{online}{}
       \name{author}{1}{}{%
-        {{hash=e33da66a407ca1018cf891c629b97c9f}{%
+        {{hash=436815fc71ee001db86142a51abde5a0}{%
            family={Foundation},
            familyi={F\bibinitperiod},
-           given={Free\bibnamedelima Software},
-           giveni={F\bibinitperiod\bibinitdelim S\bibinitperiod}}}%
+           given={Linux},
+           giveni={L\bibinitperiod}}}%
       }
-      \strng{namehash}{e33da66a407ca1018cf891c629b97c9f}
-      \strng{fullhash}{e33da66a407ca1018cf891c629b97c9f}
-      \strng{authornamehash}{e33da66a407ca1018cf891c629b97c9f}
-      \strng{authorfullhash}{e33da66a407ca1018cf891c629b97c9f}
+      \strng{namehash}{436815fc71ee001db86142a51abde5a0}
+      \strng{fullhash}{436815fc71ee001db86142a51abde5a0}
+      \strng{authornamehash}{436815fc71ee001db86142a51abde5a0}
+      \strng{authorfullhash}{436815fc71ee001db86142a51abde5a0}
       \field{sortinit}{F}
       \field{sortinithash}{276475738cc058478c1677046f857703}
       \field{labeldatesource}{year}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
-      \field{title}{O que é um software livre?}
-      \field{urlday}{16}
-      \field{urlmonth}{2}
+      \field{title}{Cyclictest}
+      \field{urlday}{3}
+      \field{urlmonth}{8}
       \field{urlyear}{2017}
-      \field{year}{2016}
+      \field{year}{2017}
       \field{urldateera}{ce}
       \verb{url}
-      \verb https://www.gnu.org/philosophy/free-sw.html
+      \verb https://wiki.linuxfoundation.org/realtime/documentation/howto/tools/cyclictest
       \endverb
     \endentry
-    \entry{StatisticBrain2017}{online}{}
+    \entry{Vivek2015}{online}{}
       \name{author}{1}{}{%
-        {{hash=80fd20c5f8dc519a1a691207a14bce7b}{%
-           family={Group},
+        {{hash=1cae381c203fd1241b5efcd033a26df0}{%
+           family={Gite},
            familyi={G\bibinitperiod},
-           given={Statistic\bibnamedelima Brain},
-           giveni={S\bibinitperiod\bibinitdelim B\bibinitperiod}}}%
+           given={Vivek},
+           giveni={V\bibinitperiod}}}%
       }
-      \strng{namehash}{80fd20c5f8dc519a1a691207a14bce7b}
-      \strng{fullhash}{80fd20c5f8dc519a1a691207a14bce7b}
-      \strng{authornamehash}{80fd20c5f8dc519a1a691207a14bce7b}
-      \strng{authorfullhash}{80fd20c5f8dc519a1a691207a14bce7b}
+      \strng{namehash}{1cae381c203fd1241b5efcd033a26df0}
+      \strng{fullhash}{1cae381c203fd1241b5efcd033a26df0}
+      \strng{authornamehash}{1cae381c203fd1241b5efcd033a26df0}
+      \strng{authorfullhash}{1cae381c203fd1241b5efcd033a26df0}
       \field{sortinit}{G}
       \field{sortinithash}{618d986594b7198ba52cf8b00d348f3f}
       \field{labeldatesource}{year}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
-      \field{title}{Attention Span Statistics}
-      \field{urlday}{17}
-      \field{urlmonth}{2}
+      \field{title}{How to Compile and Install Linux Kernel v4.5 Source On a Debian / Ubuntu Linux}
+      \field{urlday}{12}
+      \field{urlmonth}{4}
       \field{urlyear}{2017}
-      \field{year}{2016}
+      \field{year}{2015}
       \field{urldateera}{ce}
       \verb{url}
-      \verb http://www.statisticbrain.com/attention-span-statistics
+      \verb https://www.cyberciti.biz/faq/debian-ubuntu-building-installing-a-custom-linux-kernel/
       \endverb
     \endentry
-    \entry{Scott2014}{online}{}
+    \entry{Rostedt2007}{article}{}
       \name{author}{1}{}{%
-        {{hash=80137d20f6a8ccba48d2339de92dd6f5}{%
-           family={Hommel},
+        {{hash=806589085cc84032bf4f3b3d7bf6bebe}{%
+           family={Hart},
            familyi={H\bibinitperiod},
-           given={Scott},
-           giveni={S\bibinitperiod}}}%
+           given={Darren\bibnamedelima V.},
+           giveni={D\bibinitperiod\bibinitdelim V\bibinitperiod}}}%
       }
-      \strng{namehash}{80137d20f6a8ccba48d2339de92dd6f5}
-      \strng{fullhash}{80137d20f6a8ccba48d2339de92dd6f5}
-      \strng{authornamehash}{80137d20f6a8ccba48d2339de92dd6f5}
-      \strng{authorfullhash}{80137d20f6a8ccba48d2339de92dd6f5}
+      \strng{namehash}{806589085cc84032bf4f3b3d7bf6bebe}
+      \strng{fullhash}{806589085cc84032bf4f3b3d7bf6bebe}
+      \strng{authornamehash}{806589085cc84032bf4f3b3d7bf6bebe}
+      \strng{authorfullhash}{806589085cc84032bf4f3b3d7bf6bebe}
       \field{sortinit}{H}
       \field{sortinithash}{2f664b453ec75da1fe3804ca92633405}
       \field{labeldatesource}{year}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
-      \field{title}{Implementing JavaFX Best Practices}
-      \field{urlday}{21}
-      \field{urlmonth}{9}
-      \field{urlyear}{2016}
-      \field{year}{2014}
-      \field{urldateera}{ce}
-      \verb{url}
-      \verb http://docs.oracle.com/javafx/2/best_practices/jfxpub-best_practices.htm
-      \endverb
+      \field{journaltitle}{Proceedings of the Linux Symposium}
+      \field{title}{Internals of the RT Patch}
+      \field{year}{2007}
+    \endentry
+    \entry{Kerrisk2010}{book}{}
+      \name{author}{1}{}{%
+        {{hash=7f32f61adec784489cc0fa2cefa610a3}{%
+           family={Kerrisk},
+           familyi={K\bibinitperiod},
+           given={Michael},
+           giveni={M\bibinitperiod}}}%
+      }
+      \list{publisher}{1}{%
+        {No Starch Press}%
+      }
+      \strng{namehash}{7f32f61adec784489cc0fa2cefa610a3}
+      \strng{fullhash}{7f32f61adec784489cc0fa2cefa610a3}
+      \strng{authornamehash}{7f32f61adec784489cc0fa2cefa610a3}
+      \strng{authorfullhash}{7f32f61adec784489cc0fa2cefa610a3}
+      \field{sortinit}{K}
+      \field{sortinithash}{4c244ceae61406cdc0cc2ce1cb1ff703}
+      \field{labeldatesource}{year}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{title}{The Linux programming interface : a Linux and UNIX system programming handbook}
+      \field{year}{2010}
+    \endentry
+    \entry{Kopetz2002}{book}{}
+      \name{author}{1}{}{%
+        {{hash=44b9df2303234ba39ec62a0c8f1fe5b9}{%
+           family={Kopetz},
+           familyi={K\bibinitperiod},
+           given={Hermann},
+           giveni={H\bibinitperiod}}}%
+      }
+      \list{publisher}{1}{%
+        {Kluwer Academic Publishers}%
+      }
+      \strng{namehash}{44b9df2303234ba39ec62a0c8f1fe5b9}
+      \strng{fullhash}{44b9df2303234ba39ec62a0c8f1fe5b9}
+      \strng{authornamehash}{44b9df2303234ba39ec62a0c8f1fe5b9}
+      \strng{authorfullhash}{44b9df2303234ba39ec62a0c8f1fe5b9}
+      \field{sortinit}{K}
+      \field{sortinithash}{4c244ceae61406cdc0cc2ce1cb1ff703}
+      \field{labeldatesource}{year}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{title}{Real-Time Systems - Design Principles for Distributed Embedded Applications}
+      \field{year}{2002}
+    \endentry
+    \entry{Laplante2012}{book}{}
+      \name{author}{1}{}{%
+        {{hash=a9d29c92104468ec49839bd7f86ea80b}{%
+           family={Laplante},
+           familyi={L\bibinitperiod},
+           given={Phillip\bibnamedelima A.},
+           giveni={P\bibinitperiod\bibinitdelim A\bibinitperiod}}}%
+      }
+      \list{publisher}{1}{%
+        {Wiley}%
+      }
+      \strng{namehash}{a9d29c92104468ec49839bd7f86ea80b}
+      \strng{fullhash}{a9d29c92104468ec49839bd7f86ea80b}
+      \strng{authornamehash}{a9d29c92104468ec49839bd7f86ea80b}
+      \strng{authorfullhash}{a9d29c92104468ec49839bd7f86ea80b}
+      \field{sortinit}{L}
+      \field{sortinithash}{7bba64db83423e3c29ad597f3b682cf3}
+      \field{labeldatesource}{year}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{title}{Real-Time Systems Design and Analysis}
+      \field{year}{2012}
+    \endentry
+    \entry{litayem2011impact}{article}{}
+      \name{author}{2}{}{%
+        {{hash=73401566deaf6feb4912e85d0b4098fe}{%
+           family={Litayem},
+           familyi={L\bibinitperiod},
+           given={Nabil},
+           giveni={N\bibinitperiod}}}%
+        {{hash=84543b0184d2a9cdc34fdd2ebca3e9ff}{%
+           family={Saoud},
+           familyi={S\bibinitperiod},
+           given={Slim\bibnamedelima Ben},
+           giveni={S\bibinitperiod\bibinitdelim B\bibinitperiod}}}%
+      }
+      \strng{namehash}{b02461fd0ed68ca2581dfb698a7c7c03}
+      \strng{fullhash}{b02461fd0ed68ca2581dfb698a7c7c03}
+      \strng{authornamehash}{b02461fd0ed68ca2581dfb698a7c7c03}
+      \strng{authorfullhash}{b02461fd0ed68ca2581dfb698a7c7c03}
+      \field{sortinit}{L}
+      \field{sortinithash}{7bba64db83423e3c29ad597f3b682cf3}
+      \field{labeldatesource}{year}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{International Journal of Computer Applications}
+      \field{number}{3}
+      \field{title}{Impact of the linux real-time enhancements on the system performances for multi-core intel architectures}
+      \field{volume}{17}
+      \field{year}{2011}
+    \endentry
+    \entry{liu1973}{article}{}
+      \name{author}{2}{}{%
+        {{hash=b083ee8d6a713b6106649c251bcbf113}{%
+           family={Liu},
+           familyi={L\bibinitperiod},
+           given={Chung\bibnamedelima Laung},
+           giveni={C\bibinitperiod\bibinitdelim L\bibinitperiod}}}%
+        {{hash=02e762f08e0bcb52435a507b2d1bb7ac}{%
+           family={Layland},
+           familyi={L\bibinitperiod},
+           given={James\bibnamedelima W},
+           giveni={J\bibinitperiod\bibinitdelim W\bibinitperiod}}}%
+      }
+      \list{publisher}{1}{%
+        {ACM}%
+      }
+      \strng{namehash}{1f9322edcb31190fa3871ede62210629}
+      \strng{fullhash}{1f9322edcb31190fa3871ede62210629}
+      \strng{authornamehash}{1f9322edcb31190fa3871ede62210629}
+      \strng{authorfullhash}{1f9322edcb31190fa3871ede62210629}
+      \field{sortinit}{L}
+      \field{sortinithash}{7bba64db83423e3c29ad597f3b682cf3}
+      \field{labeldatesource}{year}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{Journal of the ACM (JACM)}
+      \field{number}{1}
+      \field{title}{Scheduling algorithms for multiprogramming in a hard-real-time environment}
+      \field{volume}{20}
+      \field{year}{1973}
+      \field{pages}{46\bibrangedash 61}
+      \range{pages}{16}
     \endentry
     \entry{Anderson2007}{thesis}{}
       \name{author}{1}{}{%
@@ -195,28 +325,115 @@
       \field{type}{Mestrado}
       \field{year}{2007}
     \endentry
-    \entry{Roger2011}{book}{}
+    \entry{Priberam}{online}{}
       \name{author}{1}{}{%
-        {{hash=5622f69c9372e97f01330dfc7cd394fe}{%
-           family={Pressman},
-           familyi={P\bibinitperiod},
-           given={Roger\bibnamedelima S.},
-           giveni={R\bibinitperiod\bibinitdelim S\bibinitperiod}}}%
+        {{hash=6c35021d593667fce77e26d0531e2ea9}{%
+           family={Priberam},
+           familyi={P\bibinitperiod}}}%
       }
-      \list{publisher}{1}{%
-        {McGraw Hill}%
-      }
-      \strng{namehash}{5622f69c9372e97f01330dfc7cd394fe}
-      \strng{fullhash}{5622f69c9372e97f01330dfc7cd394fe}
-      \strng{authornamehash}{5622f69c9372e97f01330dfc7cd394fe}
-      \strng{authorfullhash}{5622f69c9372e97f01330dfc7cd394fe}
+      \strng{namehash}{6c35021d593667fce77e26d0531e2ea9}
+      \strng{fullhash}{6c35021d593667fce77e26d0531e2ea9}
+      \strng{authornamehash}{6c35021d593667fce77e26d0531e2ea9}
+      \strng{authorfullhash}{6c35021d593667fce77e26d0531e2ea9}
       \field{sortinit}{P}
       \field{sortinithash}{24100cef455d7974167575052c29146e}
       \field{labeldatesource}{year}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
-      \field{title}{Engenharia de Software: Uma abordagem profissional}
-      \field{year}{2011}
+      \field{title}{Priberam da Língua Portuguesa}
+      \field{urlday}{17}
+      \field{urlmonth}{10}
+      \field{urlyear}{2017}
+      \field{year}{2017}
+      \field{urldateera}{ce}
+      \verb{url}
+      \verb https://www.priberam.pt/dlpo/
+      \endverb
+    \endentry
+    \entry{regnier2008evaluation}{article}{}
+      \name{author}{3}{}{%
+        {{hash=0c8a5ffa90afc3bf2cd82340a1f728af}{%
+           family={Regnier},
+           familyi={R\bibinitperiod},
+           given={Paul},
+           giveni={P\bibinitperiod}}}%
+        {{hash=59c22c4e513ddd43e30d4e98ddaf0b7c}{%
+           family={Lima},
+           familyi={L\bibinitperiod},
+           given={George},
+           giveni={G\bibinitperiod}}}%
+        {{hash=65224a042d3f8aa1885fc2d0c06d4476}{%
+           family={Barreto},
+           familyi={B\bibinitperiod},
+           given={Luciano},
+           giveni={L\bibinitperiod}}}%
+      }
+      \list{publisher}{1}{%
+        {ACM}%
+      }
+      \strng{namehash}{ac7b7dc72448aa1347c5dbe0ccce10e9}
+      \strng{fullhash}{ac7b7dc72448aa1347c5dbe0ccce10e9}
+      \strng{authornamehash}{ac7b7dc72448aa1347c5dbe0ccce10e9}
+      \strng{authorfullhash}{ac7b7dc72448aa1347c5dbe0ccce10e9}
+      \field{sortinit}{R}
+      \field{sortinithash}{c15bc8eb6936bc6b3c8baa9e8575af53}
+      \field{labeldatesource}{year}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{ACM SIGOPS Operating Systems Review}
+      \field{number}{6}
+      \field{title}{Evaluation of interrupt handling timeliness in real-time linux operating systems}
+      \field{volume}{42}
+      \field{year}{2008}
+      \field{pages}{52\bibrangedash 63}
+      \range{pages}{12}
+    \endentry
+    \entry{Schildt1996}{book}{}
+      \name{author}{1}{}{%
+        {{hash=2676c61586a255bbc7ad51756ce75b21}{%
+           family={Schildt},
+           familyi={S\bibinitperiod},
+           given={Herbert},
+           giveni={H\bibinitperiod}}}%
+      }
+      \list{publisher}{1}{%
+        {Makron Books}%
+      }
+      \strng{namehash}{2676c61586a255bbc7ad51756ce75b21}
+      \strng{fullhash}{2676c61586a255bbc7ad51756ce75b21}
+      \strng{authornamehash}{2676c61586a255bbc7ad51756ce75b21}
+      \strng{authorfullhash}{2676c61586a255bbc7ad51756ce75b21}
+      \field{sortinit}{S}
+      \field{sortinithash}{3c1547c63380458f8ca90e40ed14b83e}
+      \field{labeldatesource}{year}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{title}{C Completo e Total}
+      \field{year}{1996}
+    \endentry
+    \entry{Tanenbaum2009}{book}{}
+      \name{author}{1}{}{%
+        {{hash=5fec945e2e4e128e1f94258b75085d2d}{%
+           family={Tanenbaum},
+           familyi={T\bibinitperiod},
+           given={Andrew\bibnamedelima S.},
+           giveni={A\bibinitperiod\bibinitdelim S\bibinitperiod}}}%
+      }
+      \list{publisher}{1}{%
+        {Pearson Prentice Hall}%
+      }
+      \strng{namehash}{5fec945e2e4e128e1f94258b75085d2d}
+      \strng{fullhash}{5fec945e2e4e128e1f94258b75085d2d}
+      \strng{authornamehash}{5fec945e2e4e128e1f94258b75085d2d}
+      \strng{authorfullhash}{5fec945e2e4e128e1f94258b75085d2d}
+      \field{sortinit}{T}
+      \field{sortinithash}{2e5c2f51f7fa2d957f3206819bf86dc3}
+      \field{labeldatesource}{year}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{edition}{3ª edição}
+      \field{title}{Sistemas Operacionais Modernos}
+      \field{year}{2009}
     \endentry
   \endsortlist
 \endrefsection
