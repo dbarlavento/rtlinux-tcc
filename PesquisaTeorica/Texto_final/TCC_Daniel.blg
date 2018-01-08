@@ -1,15 +1,15 @@
 [0] Config.pm:354> INFO - This is Biber 2.7
 [1] Config.pm:357> INFO - Logfile is 'TCC_Daniel.blg'
-[51] biber-MSWIN64:303> INFO - === 
-[94] Biber.pm:359> INFO - Reading 'TCC_Daniel.bcf'
-[252] Biber.pm:832> INFO - Using all citekeys in bib section 0
-[276] Biber.pm:3670> INFO - Processing section 0
-[310] Biber.pm:3840> INFO - Looking for bibtex format file 'biblio.bib' for section 0
-[314] bibtex.pm:1435> INFO - Decoding LaTeX character macros into UTF-8
-[326] bibtex.pm:1292> INFO - Found BibTeX data source 'biblio.bib'
-[441] UCollate.pm:68> INFO - Overriding locale 'pt-BR' defaults 'variable = shifted' with 'variable = non-ignorable'
-[441] UCollate.pm:68> INFO - Overriding locale 'pt-BR' defaults 'normalization = NFD' with 'normalization = prenormalized'
-[441] Biber.pm:3499> INFO - Sorting list 'nty/global/' of type 'entry' with scheme 'nty' and locale 'pt-BR'
-[441] Biber.pm:3505> INFO - No sort tailoring available for locale 'pt-BR'
-[477] bbl.pm:608> INFO - Writing 'TCC_Daniel.bbl' with encoding 'UTF-8'
-[481] bbl.pm:712> INFO - Output to TCC_Daniel.bbl
+[69] biber-MSWIN64:303> INFO - === 
+[116] Biber.pm:359> INFO - Reading 'TCC_Daniel.bcf'
+[277] Biber.pm:832> INFO - Using all citekeys in bib section 0
+[300] Biber.pm:3670> INFO - Processing section 0
+[332] Biber.pm:3840> INFO - Looking for bibtex format file 'biblio.bib' for section 0
+[338] bibtex.pm:1435> INFO - Decoding LaTeX character macros into UTF-8
+[351] bibtex.pm:1292> INFO - Found BibTeX data source 'biblio.bib'
+[463] UCollate.pm:68> INFO - Overriding locale 'pt-BR' defaults 'normalization = NFD' with 'normalization = prenormalized'
+[464] UCollate.pm:68> INFO - Overriding locale 'pt-BR' defaults 'variable = shifted' with 'variable = non-ignorable'
+[464] Biber.pm:3499> INFO - Sorting list 'nty/global/' of type 'entry' with scheme 'nty' and locale 'pt-BR'
+[464] Biber.pm:3505> INFO - No sort tailoring available for locale 'pt-BR'
+[493] bbl.pm:608> INFO - Writing 'TCC_Daniel.bbl' with encoding 'UTF-8'
+[497] bbl.pm:712> INFO - Output to TCC_Daniel.bbl

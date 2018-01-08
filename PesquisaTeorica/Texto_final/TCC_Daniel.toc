@@ -1,59 +1,30 @@
 \boolfalse {citerequest}\boolfalse {citetracker}\boolfalse {pagetracker}\boolfalse {backtracker}\relax 
 \defcounter {refsection}{0}\relax 
 \select@language {brazil}
-\defcounter {refsection}{0}\relax 
 \contentsline {chapter}{\numberline {1}INTRODU\IeC {\c C}\IeC {\~A}O}{8}{chapter.1}
-\defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {1.1}Justificativa}{9}{section.1.1}
-\defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {1.2}Objetivos}{9}{section.1.2}
-\defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {1.2.1}Gerais}{9}{subsection.1.2.1}
-\defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {1.2.2}Espec\IeC {\'\i }ficos}{9}{subsection.1.2.2}
-\defcounter {refsection}{0}\relax 
+\contentsline {section}{\numberline {1.1}Objetivos}{8}{section.1.1}
+\contentsline {subsection}{\numberline {1.1.1}Gerais}{9}{subsection.1.1.1}
+\contentsline {subsection}{\numberline {1.1.2}Espec\IeC {\'\i }ficos}{9}{subsection.1.1.2}
+\contentsline {section}{\numberline {1.2}Trabalhos relacionados}{9}{section.1.2}
 \contentsline {chapter}{\numberline {2}Fundamenta\IeC {\c c}\IeC {\~a}o Te\IeC {\'o}rica}{10}{chapter.2}
-\defcounter {refsection}{0}\relax 
 \contentsline {section}{\numberline {2.1}Sistemas de Tempo Real}{10}{section.2.1}
-\defcounter {refsection}{0}\relax 
 \contentsline {subsection}{\numberline {2.1.1}Classifica\IeC {\c c}\IeC {\~a}o}{11}{subsection.2.1.1}
-\defcounter {refsection}{0}\relax 
 \contentsline {subsection}{\numberline {2.1.2}Tarefas de Tempo Real}{11}{subsection.2.1.2}
-\defcounter {refsection}{0}\relax 
 \contentsline {section}{\numberline {2.2}Sistemas Operacionais de Tempo Real}{13}{section.2.2}
-\defcounter {refsection}{0}\relax 
 \contentsline {subsection}{\numberline {2.2.1}Lat\IeC {\^e}ncia}{15}{subsection.2.2.1}
-\defcounter {refsection}{0}\relax 
 \contentsline {subsection}{\numberline {2.2.2}Linux Para Tempo Real}{16}{subsection.2.2.2}
-\defcounter {refsection}{0}\relax 
 \contentsline {subsection}{\numberline {2.2.3}O \textit {Patch} PREEMPT\_RT}{17}{subsection.2.2.3}
-\defcounter {refsection}{0}\relax 
 \contentsline {subsection}{\numberline {2.2.4}O RTAI}{18}{subsection.2.2.4}
-\defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {2.3}Trabalhos relacionados}{19}{section.2.3}
-\defcounter {refsection}{0}\relax 
 \contentsline {chapter}{\numberline {3}Metodologia}{20}{chapter.3}
-\defcounter {refsection}{0}\relax 
 \contentsline {section}{\numberline {3.1}Modelagem dos Teste}{21}{section.3.1}
-\defcounter {refsection}{0}\relax 
 \contentsline {section}{\numberline {3.2}Implementa\IeC {\c c}\IeC {\~a}o dos Testes}{22}{section.3.2}
-\defcounter {refsection}{0}\relax 
 \contentsline {section}{\numberline {3.3}O Ambiente de Testes}{23}{section.3.3}
-\defcounter {refsection}{0}\relax 
 \contentsline {section}{\numberline {3.4}Produzindo um \textit {kernel} de tempo real}{24}{section.3.4}
-\defcounter {refsection}{0}\relax 
 \contentsline {subsection}{\numberline {3.4.1}Configura\IeC {\c c}\IeC {\~a}o do \textit {Kernel}}{25}{subsection.3.4.1}
-\defcounter {refsection}{0}\relax 
 \contentsline {subsection}{\numberline {3.4.2}Instala\IeC {\c c}\IeC {\~a}o do RTAI, compila\IeC {\c c}\IeC {\~a}o e execu\IeC {\c c}\IeC {\~a}o de programas}{26}{subsection.3.4.2}
-\defcounter {refsection}{0}\relax 
 \contentsline {section}{\numberline {3.5}Execu\IeC {\c c}\IeC {\~a}o dos Testes}{26}{section.3.5}
-\defcounter {refsection}{0}\relax 
 \contentsline {chapter}{\numberline {4}RESULTADOS}{27}{chapter.4}
-\defcounter {refsection}{0}\relax 
-\contentsline {chapter}{\numberline {5}CONCLUS\IeC {\~O}ES}{28}{chapter.5}
-\defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {5.1}Trabalhos Futuros}{28}{section.5.1}
-\defcounter {refsection}{0}\relax 
-\contentsline {chapter}{\numberline {A}AP\IeC {\^E}NDICE}{31}{appendix.A}
-\defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {A.1}Ap\IeC {\^e}ndice 1}{31}{section.A.1}
+\contentsline {chapter}{\numberline {5}CONCLUS\IeC {\~O}ES}{30}{chapter.5}
+\contentsline {section}{\numberline {5.1}Trabalhos Futuros}{31}{section.5.1}
+\contentsline {chapter}{\numberline {A}AP\IeC {\^E}NDICE}{34}{appendix.A}
+\contentsline {section}{\numberline {A.1}Ap\IeC {\^e}ndice 1}{34}{section.A.1}

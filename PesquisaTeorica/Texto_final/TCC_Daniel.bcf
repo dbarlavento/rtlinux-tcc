@@ -2235,32 +2235,31 @@
     <bcf:datasource type="file" datatype="bibtex">biblio.bib</bcf:datasource>
   </bcf:bibdata>
   <bcf:section number="0">
-    <bcf:citekey order="1">Laplante2012</bcf:citekey>
-    <bcf:citekey order="2">Farines2000</bcf:citekey>
-    <bcf:citekey order="3">Farines2000</bcf:citekey>
+    <bcf:citekey order="1">Anderson2007</bcf:citekey>
+    <bcf:citekey order="2">Litayem2011</bcf:citekey>
+    <bcf:citekey order="3">Hallberg2017</bcf:citekey>
     <bcf:citekey order="4">Laplante2012</bcf:citekey>
-    <bcf:citekey order="5">Laplante2012</bcf:citekey>
-    <bcf:citekey order="6">Kopetz2002</bcf:citekey>
-    <bcf:citekey order="7">Farines2000</bcf:citekey>
-    <bcf:citekey order="8">Tanenbaum2009</bcf:citekey>
-    <bcf:citekey order="9">Tanenbaum2009</bcf:citekey>
-    <bcf:citekey order="10">Barry2016</bcf:citekey>
-    <bcf:citekey order="11">Priberam</bcf:citekey>
-    <bcf:citekey order="12">Rostedt2007</bcf:citekey>
-    <bcf:citekey order="13">cfs</bcf:citekey>
-    <bcf:citekey order="14">Litayem2011</bcf:citekey>
-    <bcf:citekey order="15">Anderson2007</bcf:citekey>
+    <bcf:citekey order="5">Farines2000</bcf:citekey>
+    <bcf:citekey order="6">Farines2000</bcf:citekey>
+    <bcf:citekey order="7">Laplante2012</bcf:citekey>
+    <bcf:citekey order="8">Laplante2012</bcf:citekey>
+    <bcf:citekey order="9">Kopetz2002</bcf:citekey>
+    <bcf:citekey order="10">Farines2000</bcf:citekey>
+    <bcf:citekey order="11">Tanenbaum2009</bcf:citekey>
+    <bcf:citekey order="12">Tanenbaum2009</bcf:citekey>
+    <bcf:citekey order="13">Barry2016</bcf:citekey>
+    <bcf:citekey order="14">Priberam</bcf:citekey>
+    <bcf:citekey order="15">Rostedt2007</bcf:citekey>
     <bcf:citekey order="16">Litayem2011</bcf:citekey>
-    <bcf:citekey order="17">Hallberg2017</bcf:citekey>
-    <bcf:citekey order="18">Ghosh1994</bcf:citekey>
-    <bcf:citekey order="19">Anderson2007</bcf:citekey>
-    <bcf:citekey order="20">LinuxCyclictest2017</bcf:citekey>
-    <bcf:citekey order="21">Anderson2007</bcf:citekey>
-    <bcf:citekey order="22">mibench2001</bcf:citekey>
-    <bcf:citekey order="23">hartstone1992</bcf:citekey>
-    <bcf:citekey order="24">Anderson2007</bcf:citekey>
-    <bcf:citekey order="25">LinuxCyclictest2017</bcf:citekey>
-    <bcf:citekey order="26">Lim2017</bcf:citekey>
+    <bcf:citekey order="17">Ghosh1994</bcf:citekey>
+    <bcf:citekey order="18">Anderson2007</bcf:citekey>
+    <bcf:citekey order="19">LinuxCyclictest2017</bcf:citekey>
+    <bcf:citekey order="20">Anderson2007</bcf:citekey>
+    <bcf:citekey order="21">mibench2001</bcf:citekey>
+    <bcf:citekey order="22">hartstone1992</bcf:citekey>
+    <bcf:citekey order="23">Anderson2007</bcf:citekey>
+    <bcf:citekey order="24">LinuxCyclictest2017</bcf:citekey>
+    <bcf:citekey order="25">Lim2017</bcf:citekey>
     <bcf:citekey order="0">*</bcf:citekey>
   </bcf:section>
   <bcf:sortlist section="0" name="nty/global/" type="entry" sortscheme="nty" sortnamekeyscheme="global" labelprefix="">

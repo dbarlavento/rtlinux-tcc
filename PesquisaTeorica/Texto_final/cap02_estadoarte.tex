@@ -74,7 +74,7 @@ As latências por inversão de prioridade e inversão de interrupção consistem
 \subsection{Linux Para Tempo Real}
 As modernas aplicações de tempo real estão muito mais conectadas e iterativas, isso exige a implementação de novas funcionalidades, como interfaces gráficas, comunicação com serviços web e banco de dados. Essas funcionalidades além de um grande reuso de código, também fazem necessário um melhor suporte dos sistemas operacionais sobre as quais executam. Os SOTR tradicionais e os núcleos de tempo real, embora tenham um ótimo desempenho no cumprimento de metas temporais, geralmente, oferecem pouco ou nenhum suporte aos recursos utilizados nas aplicações mais modernas.
 
-Na busca por melhor suporte as aplicações, vários projetos tomaram a iniciativa de incorporar funcionalidades de tempo real a SOPG. Devido ao seu código fonte aberto, sua comprovada robustez em aplicações críticas e sua portabilidade entre diferentes plataformas de hardware, o Linux, tornou-se um dos sistemas mais utilizados nas conversões para tempo real. Porém o Linux é concebido para uso e computadores pessoais e servidores e por este motivo seu \textit{kernel} é otimizado para obter um melhor desempenho global e alocar recursos de forma justa para todos os processos em execução por meio do seu escalonador Completely Fair Agendador \cite{cfs}. 
+Na busca por melhor suporte as aplicações, vários projetos tomaram a iniciativa de incorporar funcionalidades de tempo real a SOPG. Devido ao seu código fonte aberto, sua comprovada robustez em aplicações críticas e sua portabilidade entre diferentes plataformas de hardware, o Linux, tornou-se um dos sistemas mais utilizados nas conversões para tempo real. Porém o Linux é concebido para uso e computadores pessoais e servidores e por este motivo seu \textit{kernel} é otimizado para obter um melhor desempenho global e alocar recursos de forma justa para todos os processos em execução por meio do seu escalonador Completely Fair Agendador \gls{cfs}. 
 
 Dentre os projetos mais ativos, no trabalho de transformar o Linux em um SOTR, podemos citar: RTAI, Xenomai e Preempt\_RT. Cada um desses projetos implementa uma versão modificada do \textit{kernel}, com arquitetura própria, vantagens e desvantagens. Neste trabalho as soluções estudadas e avaliadas são o RTAI e o \textit{patch} Preempt\_RT.
 
@@ -88,13 +88,13 @@ As funcionalidades do sistema de forma geral permanece a mesma para gerenciament
 \subsection{O RTAI}
 O RTAI, acrônimo de \textit{Real-time Application Interface}, surgiu como uma variação do antigo \textit{RTLinux} desenvolvida pelo \textit{Dipartimento di Ingeneria Aerospaziale} da Universidade \textit{Politecnico di Milano}.
 
-Sua abordagem para a transformação do Linux em um SOTR utiliza um \textit{microkernel} em paralelo ao \textit{kernel} do Linux que é responsável pela execução das tarefas de tempo real, enquanto o \textit{kernel} fica responsável pela execução das tarefas de baixa prioridade, está solução é comumente chamada de \textit{Dual Kernel}. Neste sistema o gerenciamento do hardware fica a cargo de uma camada de abstração criada abaixo dos \textit{kernels}, chamada \textit{ADEOS} (\textit{Adaptive Domain Environment for Operating Systems}). Esta camada é quem permite dois  núcleos compartilhare o mesmo hardware simultaneamente. A arquitetura implementada pelo sistema é ilustrada na figura.
+Sua abordagem para a transformação do Linux em um SOTR utiliza um \textit{microkernel} em paralelo ao \textit{kernel} do Linux que é responsável pela execução das tarefas de tempo real, enquanto o \textit{kernel} fica responsável pela execução das tarefas de baixa prioridade, está solução é comumente chamada de \textit{Dual Kernel}. Neste sistema o gerenciamento do hardware fica a cargo de uma camada de abstração criada abaixo dos \textit{kernels}, chamada \textit{ADEOS} (\textit{Adaptive Domain Environment for Operating Systems}). Esta camada é quem permite dois  núcleos compartilhare o mesmo hardware simultaneamente. A arquitetura implementada pelo sistema é ilustrada na figura \ref{ArquiteturaRTAI}.
 
 \begin{figure}[!htb]
     \centering
     \includegraphics[scale=0.8]{ArquiteturaRTAI}
     \caption{Arquitetura \textit{Dual Kernel} adotada pelo RTAI, \cite{Litayem2011}}
-    \label{TemposTarefa}
+    \label{ArquiteturaRTAI}
 \end{figure}
 
 O \textit{microkernel} implementado pelo RTAI, a semelhança dos NTR, suporta todo o conjunto básico de funcionalidades para a construção de ATR, como rotinas para a criação, destruição, suspensão, sincronia e comunicação entre tarefas, temporizadores com alta resolução, políticas de escalonamento, capacidade de execução de tarefas de tempo real no espaço do usuário e mecanismos para controle de recursos compartilhados. Seu escalonador suporta políticas \textit{Rate Monotonic} (RM), EDF, FIFO orientado a prioridades ( em que 0 é a maior prioridade) e RR.
