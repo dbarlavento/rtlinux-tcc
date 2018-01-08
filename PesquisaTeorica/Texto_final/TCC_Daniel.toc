@@ -26,30 +26,34 @@
 \defcounter {refsection}{0}\relax 
 \contentsline {subsection}{\numberline {2.2.2}Linux Para Tempo Real}{16}{subsection.2.2.2}
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {2.2.3}O \textit {Patch} PREEMPT\_RT}{16}{subsection.2.2.3}
+\contentsline {subsection}{\numberline {2.2.3}O \textit {Patch} PREEMPT\_RT}{17}{subsection.2.2.3}
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {2.2.4}O RTAI}{17}{subsection.2.2.4}
+\contentsline {subsection}{\numberline {2.2.4}O RTAI}{18}{subsection.2.2.4}
 \defcounter {refsection}{0}\relax 
-\contentsline {chapter}{\numberline {3}Metodologia}{18}{chapter.3}
+\contentsline {section}{\numberline {2.3}Trabalhos relacionados}{19}{section.2.3}
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {3.1}Par\IeC {\^a}metros e premissas utilizados na Avalia\IeC {\c c}\IeC {\~a}o}{18}{section.3.1}
+\contentsline {chapter}{\numberline {3}Metodologia}{20}{chapter.3}
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {3.2}O Ambiente de Testes}{19}{section.3.2}
+\contentsline {section}{\numberline {3.1}Modelagem dos Teste}{21}{section.3.1}
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {3.2.1}Instala\IeC {\c c}\IeC {\~a}o dos Sistemas e Testes Preliminares}{20}{subsection.3.2.1}
+\contentsline {section}{\numberline {3.2}Implementa\IeC {\c c}\IeC {\~a}o dos Testes}{22}{section.3.2}
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {3.2.2}Configura\IeC {\c c}\IeC {\~a}o do \textit {Kernel}}{21}{subsection.3.2.2}
+\contentsline {section}{\numberline {3.3}O Ambiente de Testes}{23}{section.3.3}
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {3.2.3}Erros e Falhas Encontradas}{22}{subsection.3.2.3}
+\contentsline {section}{\numberline {3.4}Produzindo um \textit {kernel} de tempo real}{24}{section.3.4}
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {3.3}\textit {Benchmarks}}{22}{section.3.3}
+\contentsline {subsection}{\numberline {3.4.1}Configura\IeC {\c c}\IeC {\~a}o do \textit {Kernel}}{25}{subsection.3.4.1}
 \defcounter {refsection}{0}\relax 
-\contentsline {chapter}{\numberline {4}RESULTADOS}{23}{chapter.4}
+\contentsline {subsection}{\numberline {3.4.2}Instala\IeC {\c c}\IeC {\~a}o do RTAI, compila\IeC {\c c}\IeC {\~a}o e execu\IeC {\c c}\IeC {\~a}o de programas}{26}{subsection.3.4.2}
 \defcounter {refsection}{0}\relax 
-\contentsline {chapter}{\numberline {5}CONCLUS\IeC {\~O}ES}{24}{chapter.5}
+\contentsline {section}{\numberline {3.5}Execu\IeC {\c c}\IeC {\~a}o dos Testes}{26}{section.3.5}
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {5.1}Trabalhos Futuros}{24}{section.5.1}
+\contentsline {chapter}{\numberline {4}RESULTADOS}{27}{chapter.4}
 \defcounter {refsection}{0}\relax 
-\contentsline {chapter}{\numberline {A}AP\IeC {\^E}NDICE}{27}{appendix.A}
+\contentsline {chapter}{\numberline {5}CONCLUS\IeC {\~O}ES}{28}{chapter.5}
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {A.1}Ap\IeC {\^e}ndice 1}{27}{section.A.1}
+\contentsline {section}{\numberline {5.1}Trabalhos Futuros}{28}{section.5.1}
+\defcounter {refsection}{0}\relax 
+\contentsline {chapter}{\numberline {A}AP\IeC {\^E}NDICE}{31}{appendix.A}
+\defcounter {refsection}{0}\relax 
+\contentsline {section}{\numberline {A.1}Ap\IeC {\^e}ndice 1}{31}{section.A.1}

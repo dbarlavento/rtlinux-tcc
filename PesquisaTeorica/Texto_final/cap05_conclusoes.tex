@@ -1,4 +1,29 @@
 \chapter{CONCLUSÕES}
 \label{cap:conclusoes}
+Este trabalho apresentou uma análise quantitativa do desempenho de duas soluções, \textit{patch} Preempt\_RT  e RTAI, que transformam um sistemas Linux de propósito geral em um SOTR. Os resultados desta análise, os programas de teste desenvolvidos e a documentação gerada contribuem com informações valiosas para projetistas de STR e estudantes no momento de comparar outros SOTR com os sistemas estudados assim como base para a criação de ATR utilizando Linux.
+
+A análise dos valores medidos para latências a que as tarefas de tempo real estão sujeitas e dos seus respectivos tempos de computação nos mostram que tanto o Preempt\_RT quanto o RTAI podem executar com segurança, tarefas de tempo real com restrições temporais na casa dos milissegundos e, nos casos de tarefas exclusivamente periódicas, centenas de microssegundos.
+
+Além dos resultados obtidos com os testes, algumas conclusões sobre a utilização do \textit{patch} Preempt\_RT foram:
+\begin{itemize}
+    \item Facilidade de instalação
+    \item Simplicidade na criação de aplicações
+    \item Boa documentação, atualizada e organizada
+    \item Para algumas aplicações o aparecimento de valores espúrios de latência podem comprometer seu uso
+\end{itemize}
+
+Quanto ao RTAI pode-se dizer que:
+\begin{itemize}
+    \item Instalar e usa-lo pela primeira vez pode ser um tormento
+    \item A documentação e escassa, dispersa e desatualizada
+    \item Algumas de suas funcionalidades são divulgadas pelos desenvolvedores, mas não estão documentadas
+    \item Sua arquitetura lhe confere eficiência, mas pouca integração com o sistema
+    \item Chamadas de sistema tornam a execução de tarefas imprevisível
+    \item A maior consistência no seus valores de latência permitem produzir sistemas mais previsíveis
+\end{itemize}
 
 \section{Trabalhos Futuros}
+Seria bastante desejável comprovar a eficiência do Preempt\_RT e RTAI por meio de um prova de conceito em uma aplicação prática como em um sistema de controle.
+Como um dos algoritmos de escalonamento para tarefas de tempo real, o EDF é suportado tanto  pelo Preempt_RT quanto pelo RTAI, testar a eficiência dos sistemas utilizando este algoritmo seria de grande importância.
+Com a popularização de processadores com múltiplos núcleos torna inevitável o estudo do comportamento de SOTR nessas plataformas. Como também se tronaram algo popular, seria de grande interesse estudar o comportamento de um sistema Linux de tempo real em plataformas utilizadas em dispositivos embarcados baseadas em processadores ARM.
+Avaliar a necessidade e a possibilidade de executar o Linux com a aplicação do \textit{patch} Preempt\_RT e do RTAI simultaneamente com o objetivo de tentar sanar deficiências de ambas as soluções.
