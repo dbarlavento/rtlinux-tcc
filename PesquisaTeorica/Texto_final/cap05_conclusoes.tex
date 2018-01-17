@@ -2,25 +2,9 @@
 \label{cap:conclusoes}
 Este trabalho apresentou uma análise quantitativa do desempenho de duas soluções, \textit{patch} Preempt\_RT  e RTAI, que transformam um sistemas Linux de propósito geral em um SOTR. Os resultados desta análise, os programas de teste desenvolvidos e a documentação gerada contribuem com informações valiosas para projetistas de STR e estudantes no momento de comparar outros SOTR com os sistemas estudados assim como base para a criação de ATR utilizando Linux.
 
-A análise dos valores medidos para latências a que as tarefas de tempo real estão sujeitas e dos seus respectivos tempos de computação nos mostram que tanto o Preempt\_RT quanto o RTAI podem executar com segurança, tarefas de tempo real com restrições temporais na casa dos milissegundos e, nos casos de tarefas exclusivamente periódicas, centenas de microssegundos.
+Além dos resultados obtidos com os testes, em uma avaliação qualitativa do \textit{patch} Preempt\_RT, podemos destacar sua grande facilidade de utilização dada a sua boa documentação, mantida atualizada e organizada. As aplicações de tempo real são fáceis de construir pois utilizam as mesmas bibliotecas já suportadas e documentadas pelo Linux. A sua principal deficiência é o aparecimento de alguns valores espúrios de latência que podem comprometer o desempenho de algumas aplicações.
 
-Além dos resultados obtidos com os testes, algumas conclusões sobre a utilização do \textit{patch} Preempt\_RT foram:
-\begin{itemize}
-    \item Facilidade de instalação
-    \item Simplicidade na criação de aplicações
-    \item Boa documentação, atualizada e organizada
-    \item Para algumas aplicações o aparecimento de valores espúrios de latência podem comprometer seu uso
-\end{itemize}
-
-Quanto ao RTAI pode-se dizer que:
-\begin{itemize}
-    \item Instalar e usa-lo pela primeira vez pode ser um tormento
-    \item A documentação e escassa, dispersa e desatualizada
-    \item Algumas de suas funcionalidades são divulgadas pelos desenvolvedores, mas não estão documentadas
-    \item Sua arquitetura lhe confere eficiência, mas pouca integração com o sistema
-    \item Chamadas de sistema tornam a execução de tarefas imprevisível
-    \item A maior consistência no seus valores de latência permitem produzir sistemas mais previsíveis
-\end{itemize}
+Quanto ao RTAI, a maior consistência nos valores de latência e tempo de execução permitem produzir sistemas mais previsíveis, porém vários problemas de suporte e compatibilidade, como documentação escassa (algumas funcionalidades nem estão documentadas), dispersa e desatualizada, arquitetura eficiente mas que lhe confere pouca integração com o Linux e a impossibilidade de executar chamadas de sistemas em tarefas de tempo real sob pena de tornar a execução do sistema imprevisível, podem tornar seu uso inviável para projetos que exijam um bom suporte ou uma aplicação que precise de uma maior integração com o Linux.
 
 \section{Trabalhos Futuros}
 Seria bastante desejável comprovar a eficiência do Preempt\_RT e RTAI por meio de um prova de conceito em uma aplicação prática como em um sistema de controle.

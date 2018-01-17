@@ -2,16 +2,19 @@
 \label{cap:introducao}
 Sistemas de tempo real se tornaram elemento constante na vida das pessoas e estão presentes em locais que vão de aparelhos condicionadores de ar a grandes usinas geradores de energia.
 
-Devido ao aumento da complexidade dos sistemas de tempo real os desenvolvedores veem procurando soluções que permitam o desenvolvimento destes sistemas de forma rápida, estruturada e que possível de ser mantida a longo prazo, o que sempre foi uma grande dificuldade se comparado com os sistemas desenvolvidos em \textit{assembly}. Devido ao aumento da capacidade de processamento dos processadores atuais, como parte da solução, sistemas operacionais de tempo real vem sendo cada vez mais utilizados no desenvolvimento de novos projetos, pois proporcionam uma grande variedade de funcionalidades previamente implementadas e gerenciam praticamente todo o hardware. 
+Devido ao aumento da complexidade dos sistemas de tempo real os desenvolvedores veem procurando soluções que permitam a construção destes sistemas de forma rápida, estruturada e que possível de ser mantida a longo prazo, o que sempre foi uma grande dificuldade nos sistemas desenvolvidos  em \textit{assembly}. Devido ao aumento da capacidade de processamento dos processadores atuais, como parte da solução, sistemas operacionais de tempo real vem sendo cada vez mais utilizados no desenvolvimento de novos projetos, pois proporcionam uma grande variedade de funcionalidades previamente implementadas e gerenciam praticamente todo o hardware. 
 
 Grande parte dos sistemas operacionais de tempo real disponíveis no mercado são proprietários, com um alto custo de licenciamento, ou não possuem suporte a recursos mais avançados exigidos por algumas aplicações. Devido a este problema vários projetos foram desenvolvidos com a finalidade de transforma o Linux em um verdadeiro sistema operacional de tempo real. Dentre as soluções criadas podemos destacar o \textit{patch} Preempt\_RT, suportado oficialmente pelos desenvolvedores do \textit{kernel} Linux, e o RTAI uma solução baseada em \textit{microkernel}.
 
-A validação por meio da execução de \textit{benchmarks} da transformação do Linux em um sistema de tempo real pelo Preempt\_RT e pelo RTAI, fornece uma base sólida de dados que permitem a um projetista de sistemas de tempo real comparar as soluções baseadas em Linux com outros sistemas e verificar se suas restrições temporais podem ser atendidas.
+A validação por meio da execução de \textit{benchmarks} da transformação do Linux em um sistema de tempo real utilizando Preempt\_RT e RTAI, fornece uma base sólida de dados que permitem a um projetista de sistemas de tempo real comparar as soluções baseadas em Linux com outros sistemas e verificar se as restrições temporais de seus projetos podem ser atendidas.
+
+A definição, implementação, aplicação de testes a sistemas Linux modificados para suportar aplicações de tempo real e a avaliação, dentre outras características, do desempenho das duas soluções utilizadas, Preempt\_RT e RTAI, a fim de fornecer um conjunto de dados que possam ser úteis, não só na seleção entre sistemas operacionais de tempo real mas uma base sobre a qual avaliações mais aprofundadas possam ser construídas. 
+
 
 \section{Objetivos}
 Este trabalho tem como objetivos gerais e específicos:
 \subsection{Gerais}
-Esse trabalho tem como objetivo avaliar a capacidade do \textit{patch} Preempt\_RT, oficialmente
+Este trabalho tem como objetivo avaliar a capacidade do \textit{patch} Preempt\_RT, oficialmente
 suportado pelos desenvolvedores do \textit{kernel}, de transformar um PC com um único processador em um
 computador capaz atender aos requisitos de uma aplicação de tempo real rígida e comparar os
 resultados com o RTAI, um sistema maduro, testado e consolidado.
@@ -30,7 +33,7 @@ desenvolvimento de aplicações para ambas as soluções.
 \end{itemize}
 
 \section{Trabalhos relacionados}
-Durante a pesquisa bibliográfica foram identificados alguns trabalhos semelhantes e que nos proveram diversos recursos para a elaboração deste trabalho, dentre eles se destacam \cite{Anderson2007}, que nos forneceu o modelo de teste utilizado neste trabalho, assim como medições de performance do RTAI, utilizados como valores de referência para verificação dos testes desenvolvidos.
+Durante a pesquisa bibliográfica foram identificados alguns trabalhos semelhantes e que nos proveram diversos recursos para a elaboração deste trabalho, dentre eles se destacam \cite{Anderson2007}, que nos forneceu o modelo de teste utilizado neste trabalho, assim como medições de performance do RTAI que foram utilizados como valores de referência para verificação dos testes desenvolvidos.
 
-Também podem ser destacados os trabalhos de \cite{Litayem2011} e \cite{Hallberg2017} que forneceram valores de referência e demonstram a real qualidade dos resultados oferecidos pelo \textit{benchmark} Cyclictest na avaliação e comparação de sistemas de tempo real baseados em Linux.
+Também podem ser destacados os trabalhos de \cite{Litayem2011} e \cite{Hallberg2017} que forneceram valores de referência e demonstram a real qualidade dos resultados oferecidos pelo \textit{benchmark} Cyclictest na avaliação e comparação de sistemas de tempo real baseados em Linux, embora não deixem muito claro em que circunstâncias os testes forma executados.
 

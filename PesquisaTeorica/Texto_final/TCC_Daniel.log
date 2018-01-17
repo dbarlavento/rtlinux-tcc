@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.18 (MiKTeX 2.9.6350 64-bit) (preloaded format=pdflatex 2017.11.2)  8 JAN 2018 10:56
+This is pdfTeX, Version 3.14159265-2.6-1.40.18 (MiKTeX 2.9.6350 64-bit) (preloaded format=pdflatex 2017.11.2)  10 JAN 2018 16:08
 entering extended mode
 **./TCC_Daniel.tex
 (TCC_Daniel.tex
@@ -1579,7 +1579,7 @@ Package glossaries Info: Writing glossary file TCC_Daniel.glo on input line 54.
 Package glossaries Info: Writing glossary file TCC_Daniel.acn on input line 54.
 
 
-(abreviaturas.tex) (glossario.tex)
+(abreviaturas.tex)
 Package csquotes Info: Checking for multilingual support...
 Package csquotes Info: ... found 'babel' package.
 Package csquotes Info: Adjusting default style.
@@ -1609,11 +1609,7 @@ Package biblatex Info: ... file 'brazil.lbx' found.
 
 (C:\Users\Daniel\AppData\Roaming\MiKTeX\2.9\tex\latex\biblatex\lbx\brazil.lbx
 File: brazil.lbx 2016/12/05 v3.7 biblatex localization (PK/JW/AB)
-))) (TCC_Daniel.aux (agradecimentos.aux)
-
-LaTeX Warning: Label `serie-ahTabela' multiply defined.
-
-)
+))) (TCC_Daniel.aux (agradecimentos.aux))
 \openout1 = `TCC_Daniel.aux'.
 
 LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 67.
@@ -1630,7 +1626,8 @@ LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 67.
 LaTeX Font Info:    ... okay on input line 67.
 LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 67.
 LaTeX Font Info:    Try loading font information for TS1+cmr on input line 67.
- ("C:\Program Files\MiKTeX 2.9\tex\latex\base\ts1cmr.fd"
+
+("C:\Program Files\MiKTeX 2.9\tex\latex\base\ts1cmr.fd"
 File: ts1cmr.fd 2014/09/29 v2.5h Standard LaTeX font definitions
 )
 LaTeX Font Info:    ... okay on input line 67.
@@ -1706,19 +1703,22 @@ LaTeX Info: Redefining \nameref on input line 67.
 \c__siunitx_mathsf_int=\count453
 \c__siunitx_mathtt_int=\count454
 
-Overfull \hbox (199.07089pt too wide) in paragraph at lines 111--111
- [] 
- []
+<figuras/logo_ifpe_novo.png, id=115, 459.1554pt x 166.7028pt>
+File: figuras/logo_ifpe_novo.png Graphic file (type png)
 
+<use figuras/logo_ifpe_novo.png>
+Package pdftex.def Info: figuras/logo_ifpe_novo.png used on input line 111.
+(pdftex.def)             Requested size: 142.26378pt x 51.65189pt.
 Package babel Info: Redefining portuges shorthand "|
 (babel)             in language  on input line 111.
 Package babel Info: Redefining portuges shorthand "|
 (babel)             in language  on input line 111.
-[1
+ [1
 
 \openout5 = `TCC_Daniel.ist'.
 
-{C:/Users/Daniel/AppData/Local/MiKTeX/2.9/pdftex/config/pdftex.map}]
+{C:/Users/Daniel/AppData/Local/MiKTeX/2.9/pdftex/config/pdftex.map} <./figuras/
+logo_ifpe_novo.png>]
 Package babel Info: Redefining portuges shorthand "|
 (babel)             in language  on input line 111.
 Package babel Info: Redefining portuges shorthand "|
@@ -1771,28 +1771,20 @@ Package babel Info: Redefining portuges shorthand "|
  [3
 
 ] (resumo.tex)
-(abstract.tex
-Package babel Info: Redefining portuges shorthand "|
-(babel)             in language  on input line 1.
-Package babel Info: Redefining portuges shorthand "|
-(babel)             in language  on input line 1.
- [4
-
-])
 No file TCC_Daniel.gls.
 No file TCC_Daniel.acr.
 Package babel Info: Redefining portuges shorthand "|
 (babel)             in language  on input line 158.
 Package babel Info: Redefining portuges shorthand "|
 (babel)             in language  on input line 158.
-[5
+[4
 
 ] (TCC_Daniel.toc
 Package babel Info: Redefining portuges shorthand "|
 (babel)             in language  on input line 26.
 Package babel Info: Redefining portuges shorthand "|
 (babel)             in language  on input line 26.
- [6
+ [5
 
 ])
 \tf@toc=\write9
@@ -1803,26 +1795,30 @@ Package babel Info: Redefining portuges shorthand "|
 (babel)             in language  on input line 1.
 Package babel Info: Redefining portuges shorthand "|
 (babel)             in language  on input line 1.
- [7]
+ [6]
 Cap\'{\i }tulo 1.
 Package babel Info: Redefining portuges shorthand "|
 (babel)             in language  on input line 1.
 Package babel Info: Redefining portuges shorthand "|
-(babel)             in language  on input line 11.
+(babel)             in language  on input line 14.
 Package babel Info: Redefining portuges shorthand "|
-(babel)             in language  on input line 13.
-Package babel Info: Redefining portuges shorthand "|
-(babel)             in language  on input line 18.
-Package babel Info: Redefining portuges shorthand "|
-(babel)             in language  on input line 18.
-[8
+(babel)             in language  on input line 14.
+[7
 
 ]
 Package babel Info: Redefining portuges shorthand "|
-(babel)             in language  on input line 23.
+(babel)             in language  on input line 14.
 Package babel Info: Redefining portuges shorthand "|
-(babel)             in language  on input line 32.
-) (cap02_estadoarte.tex
+(babel)             in language  on input line 16.
+Package babel Info: Redefining portuges shorthand "|
+(babel)             in language  on input line 26.
+Package babel Info: Redefining portuges shorthand "|
+(babel)             in language  on input line 35.
+Package babel Info: Redefining portuges shorthand "|
+(babel)             in language  on input line 37.
+Package babel Info: Redefining portuges shorthand "|
+(babel)             in language  on input line 37.
+ [8]) (cap02_estadoarte.tex
 Package babel Info: Redefining portuges shorthand "|
 (babel)             in language  on input line 1.
 Package babel Info: Redefining portuges shorthand "|
@@ -1848,7 +1844,7 @@ Package babel Info: Redefining portuges shorthand "|
 (babel)             in language  on input line 25.
 Package babel Info: Redefining portuges shorthand "|
 (babel)             in language  on input line 25.
- [11] <figuras/EstadosProcesso.jpg, id=225, 265.7127pt x 213.79875pt>
+ [11] <figuras/EstadosProcesso.jpg, id=236, 265.7127pt x 213.79875pt>
 File: figuras/EstadosProcesso.jpg Graphic file (type jpg)
 
 <use figuras/EstadosProcesso.jpg>
@@ -1859,7 +1855,7 @@ Package babel Info: Redefining portuges shorthand "|
 Package babel Info: Redefining portuges shorthand "|
 (babel)             in language  on input line 38.
  [12 <./figuras/EstadosProcesso.jpg>]
-<figuras/TemposTarefa.png, id=233, 427.71796pt x 178.5069pt>
+<figuras/TemposTarefa.png, id=244, 427.71796pt x 178.5069pt>
 File: figuras/TemposTarefa.png Graphic file (type png)
 
 <use figuras/TemposTarefa.png>
@@ -1901,7 +1897,7 @@ Package babel Info: Redefining portuges shorthand "|
  [17]
 Package babel Info: Redefining portuges shorthand "|
 (babel)             in language  on input line 88.
- <figuras/ArquiteturaRTAI.png, id=267, 418.32285pt x 255.71535pt>
+ <figuras/ArquiteturaRTAI.png, id=276, 418.32285pt x 255.71535pt>
 File: figuras/ArquiteturaRTAI.png Graphic file (type png)
 
 <use figuras/ArquiteturaRTAI.png>
@@ -1976,64 +1972,64 @@ Package babel Info: Redefining portuges shorthand "|
 Cap\'{\i }tulo 4.
 Package babel Info: Redefining portuges shorthand "|
 (babel)             in language  on input line 1.
-<figuras/serie-phPRTvsRTAI.png, id=331, 471.56175pt x 143.3355pt>
+<figuras/serie-phPRTvsRTAI.png, id=339, 471.56175pt x 143.3355pt>
 File: figuras/serie-phPRTvsRTAI.png Graphic file (type png)
 
 <use figuras/serie-phPRTvsRTAI.png>
-Package pdftex.def Info: figuras/serie-phPRTvsRTAI.png used on input line 13.
-(pdftex.def)             Requested size: 471.5606pt x 143.33513pt.
+Package pdftex.def Info: figuras/serie-phPRTvsRTAI.png used on input line 7.
+(pdftex.def)             Requested size: 447.98111pt x 136.16792pt.
 
-Overfull \hbox (16.31651pt too wide) in paragraph at lines 13--14
- [][] 
- []
-
-<figuras/serie-ahPRTvsRTAI.png, id=332, 471.56175pt x 143.3355pt>
+<figuras/serie-ahPRTvsRTAI.png, id=342, 471.56175pt x 143.3355pt>
 File: figuras/serie-ahPRTvsRTAI.png Graphic file (type png)
 
 <use figuras/serie-ahPRTvsRTAI.png>
-Package pdftex.def Info: figuras/serie-ahPRTvsRTAI.png used on input line 20.
-(pdftex.def)             Requested size: 471.5606pt x 143.33513pt.
+Package pdftex.def Info: figuras/serie-ahPRTvsRTAI.png used on input line 18.
+(pdftex.def)             Requested size: 447.98111pt x 136.16792pt.
+Package babel Info: Redefining portuges shorthand "|
+(babel)             in language  on input line 21.
+Package babel Info: Redefining portuges shorthand "|
+(babel)             in language  on input line 21.
+ [27
 
-Overfull \hbox (16.31651pt too wide) in paragraph at lines 20--21
- [][] 
- []
+ <./figuras/serie-phPRTvsRTAI.png>]
+Package babel Info: Redefining portuges shorthand "|
+(babel)             in language  on input line 28.
+Package babel Info: Redefining portuges shorthand "|
+(babel)             in language  on input line 28.
+
+[28 <./figuras/serie-ahPRTvsRTAI.png>]
+
+LaTeX Warning: `!h' float specifier changed to `!ht'.
 
 ) (cap05_conclusoes.tex
 Package babel Info: Redefining portuges shorthand "|
 (babel)             in language  on input line 1.
 Package babel Info: Redefining portuges shorthand "|
 (babel)             in language  on input line 1.
- [27
-
-]
+ [29]
 Package babel Info: Redefining portuges shorthand "|
 (babel)             in language  on input line 1.
 Package babel Info: Redefining portuges shorthand "|
 (babel)             in language  on input line 1.
- [28]
-Package babel Info: Redefining portuges shorthand "|
-(babel)             in language  on input line 1.
-Package babel Info: Redefining portuges shorthand "|
-(babel)             in language  on input line 1.
- [29 <./figuras/serie-phPRTvsRTAI.png> <./figuras/serie-ahPRTvsRTAI.png>]
+ [30]
 Cap\'{\i }tulo 5.
 Package babel Info: Redefining portuges shorthand "|
 (babel)             in language  on input line 1.
 Package babel Info: Redefining portuges shorthand "|
-(babel)             in language  on input line 23.
+(babel)             in language  on input line 9.
+)
 Package babel Info: Redefining portuges shorthand "|
-(babel)             in language  on input line 23.
-[30
+(babel)             in language  on input line 176.
+Package babel Info: Redefining portuges shorthand "|
+(babel)             in language  on input line 176.
+ [31
 
 ]
 Package babel Info: Redefining portuges shorthand "|
-(babel)             in language  on input line 25.
-)
-Package babel Info: Redefining portuges shorthand "|
 (babel)             in language  on input line 178.
 Package babel Info: Redefining portuges shorthand "|
 (babel)             in language  on input line 178.
- [31]
+ [32]
 LaTeX Font Info:    Try loading font information for T1+pcr on input line 180.
  ("C:\Program Files\MiKTeX 2.9\tex\latex\psnfss\t1pcr.fd"
 File: t1pcr.fd 2001/06/04 font definitions for T1/pcr.
@@ -2042,7 +2038,7 @@ Package babel Info: Redefining portuges shorthand "|
 (babel)             in language  on input line 180.
 Package babel Info: Redefining portuges shorthand "|
 (babel)             in language  on input line 180.
- [32
+ [33
 
 ]
 No file TCC_Daniel.gls.
@@ -2051,19 +2047,55 @@ Package babel Info: Redefining portuges shorthand "|
 (babel)             in language  on input line 1.
 Package babel Info: Redefining portuges shorthand "|
 (babel)             in language  on input line 1.
- [33]
+ [34]
 Ap\^endice A.
 Package babel Info: Redefining portuges shorthand "|
 (babel)             in language  on input line 1.
 Package babel Info: Redefining portuges shorthand "|
-(babel)             in language  on input line 4.
+(babel)             in language  on input line 36.
+Package babel Info: Redefining portuges shorthand "|
+(babel)             in language  on input line 36.
+[35
+
+]
+Package babel Info: Redefining portuges shorthand "|
+(babel)             in language  on input line 49.
+Package babel Info: Redefining portuges shorthand "|
+(babel)             in language  on input line 49.
+ [36]
+Ap\^endice B.
+Package babel Info: Redefining portuges shorthand "|
+(babel)             in language  on input line 49.
+<figuras/FluxoProgramaDeTestes.jpg, id=424, 463.7325pt x 785.93625pt>
+File: figuras/FluxoProgramaDeTestes.jpg Graphic file (type jpg)
+
+<use figuras/FluxoProgramaDeTestes.jpg>
+Package pdftex.def Info: figuras/FluxoProgramaDeTestes.jpg used on input line 5
+3.
+(pdftex.def)             Requested size: 370.9865pt x 628.74985pt.
+Package babel Info: Redefining portuges shorthand "|
+(babel)             in language  on input line 57.
+Package babel Info: Redefining portuges shorthand "|
+(babel)             in language  on input line 57.
+ [37
+
+ <./figuras/FluxoProgramaDeTestes.jpg>]
+Ap\^endice C.
+Package babel Info: Redefining portuges shorthand "|
+(babel)             in language  on input line 57.
+(C:\Users\Daniel\AppData\Roaming\MiKTeX\2.9\tex\latex\listings\lstlang1.sty
+File: lstlang1.sty 2015/06/04 1.6 listings language file
 )
+(C:\Users\Daniel\AppData\Roaming\MiKTeX\2.9\tex\latex\listings\lstlang1.sty
+File: lstlang1.sty 2015/06/04 1.6 listings language file
+))
 Package atveryend Info: Empty hook `BeforeClearDocument' on input line 190.
 Package babel Info: Redefining portuges shorthand "|
 (babel)             in language  on input line 190.
 Package babel Info: Redefining portuges shorthand "|
 (babel)             in language  on input line 190.
- [34
+
+[38
 
 ]
 Package atveryend Info: Empty hook `AfterLastShipout' on input line 190.
@@ -2071,40 +2103,43 @@ Package atveryend Info: Empty hook `AfterLastShipout' on input line 190.
 Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 190.
 Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 190.
 Package rerunfilecheck Info: File `TCC_Daniel.out' has not changed.
-(rerunfilecheck)             Checksum: 24DE5B8902E1E2C45E3A537B33825F0E;1849.
-
-
-LaTeX Warning: There were multiply-defined labels.
-
+(rerunfilecheck)             Checksum: B0EAB1A73097C08E9BB530290A359424;2023.
 Package logreq Info: Writing requests to 'TCC_Daniel.run.xml'.
 \openout1 = `TCC_Daniel.run.xml'.
 
  ) 
 Here is how much of TeX's memory you used:
- 32253 strings out of 493323
- 604123 string characters out of 3129581
- 1108670 words of memory out of 3000000
- 35249 multiletter control sequences out of 15000+200000
- 548781 words of font info for 61 fonts, out of 3000000 for 9000
+ 32733 strings out of 493323
+ 608559 string characters out of 3129581
+ 1173080 words of memory out of 3000000
+ 35697 multiletter control sequences out of 15000+200000
+ 553419 words of font info for 73 fonts, out of 3000000 for 9000
  1141 hyphenation exceptions out of 8191
- 45i,11n,66p,10400b,2396s stack positions out of 5000i,500n,10000p,200000b,50000s
-{C:/Program Files/MiKTeX 2.9/fonts/enc/dvips/base/8r.enc} <C:\Users\Daniel\Ap
-pData\Local\MiKTeX\2.9\fonts\pk\ljfour\jknappen\ec\dpi600\ecbi1728.pk> <C:\User
-s\Daniel\AppData\Local\MiKTeX\2.9\fonts\pk\ljfour\jknappen\ec\dpi600\ecbi1440.p
-k> <C:\Users\Daniel\AppData\Local\MiKTeX\2.9\fonts\pk\ljfour\jknappen\ec\dpi600
-\tcrm1200.pk> <C:\Users\Daniel\AppData\Local\MiKTeX\2.9\fonts\pk\ljfour\jknappe
-n\ec\dpi600\ecbx2074.pk> <C:\Users\Daniel\AppData\Local\MiKTeX\2.9\fonts\pk\ljf
-our\jknappen\ec\dpi600\ecbx1728.pk> <C:\Users\Daniel\AppData\Local\MiKTeX\2.9\f
-onts\pk\ljfour\jknappen\ec\dpi600\ecti1200.pk> <C:\Users\Daniel\AppData\Local\M
-iKTeX\2.9\fonts\pk\ljfour\jknappen\ec\dpi600\ecrm1000.pk> <C:\Users\Daniel\AppD
-ata\Local\MiKTeX\2.9\fonts\pk\ljfour\jknappen\ec\dpi600\ecbx1440.pk> <C:\Users\
-Daniel\AppData\Local\MiKTeX\2.9\fonts\pk\ljfour\jknappen\ec\dpi600\ecrm1200.pk>
+ 48i,11n,97p,10400b,2396s stack positions out of 5000i,500n,10000p,200000b,50000s
+ <C:\Users\Daniel\AppData\Local\MiKTeX\2.9\fonts\pk\ljfour\jknappen\ec\dpi600
+\ecti1000.pk> <C:\Users\Daniel\AppData\Local\MiKTeX\2.9\fonts\pk\ljfour\jknappe
+n\ec\dpi600\ecbi2074.pk>{C:/Program Files/MiKTeX 2.9/fonts/enc/dvips/base/8r.en
+c} <C:\Users\Daniel\AppData\Local\MiKTeX\2.9\fonts\pk\ljfour\jknappen\ec\dpi600
+\ecbi1728.pk> <C:\Users\Daniel\AppData\Local\MiKTeX\2.9\fonts\pk\ljfour\jknappe
+n\ec\dpi600\tcrm1200.pk> <C:\Users\Daniel\AppData\Local\MiKTeX\2.9\fonts\pk\ljf
+our\jknappen\ec\dpi600\ecbx2074.pk> <C:\Users\Daniel\AppData\Local\MiKTeX\2.9\f
+onts\pk\ljfour\jknappen\ec\dpi600\ecbi1200.pk> <C:\Users\Daniel\AppData\Local\M
+iKTeX\2.9\fonts\pk\ljfour\jknappen\ec\dpi600\ecbx1728.pk> <C:\Users\Daniel\AppD
+ata\Local\MiKTeX\2.9\fonts\pk\ljfour\jknappen\ec\dpi600\ecti1200.pk> <C:\Users\
+Daniel\AppData\Local\MiKTeX\2.9\fonts\pk\ljfour\jknappen\ec\dpi600\ecrm1000.pk>
  <C:\Users\Daniel\AppData\Local\MiKTeX\2.9\fonts\pk\ljfour\jknappen\ec\dpi600\e
-cbx1200.pk><C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmr12.pf
-b><C:/Program Files/MiKTeX 2.9/fonts/type1/urw/courier/ucrr8a.pfb>
-Output written on TCC_Daniel.pdf (37 pages, 2068119 bytes).
+crm1200.pk> <C:\Users\Daniel\AppData\Local\MiKTeX\2.9\fonts\pk\ljfour\jknappen\
+ec\dpi600\ecti1440.pk> <C:\Users\Daniel\AppData\Local\MiKTeX\2.9\fonts\pk\ljfou
+r\jknappen\ec\dpi600\ecrm1440.pk> <C:\Users\Daniel\AppData\Local\MiKTeX\2.9\fon
+ts\pk\ljfour\jknappen\ec\dpi600\ecbx1200.pk> <C:\Users\Daniel\AppData\Local\MiK
+TeX\2.9\fonts\pk\ljfour\jknappen\ec\dpi600\ecbi1440.pk> <C:\Users\Daniel\AppDat
+a\Local\MiKTeX\2.9\fonts\pk\ljfour\jknappen\ec\dpi600\ecbx1440.pk><C:/Program F
+iles/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmr12.pfb><C:/Program Files/MiKT
+eX 2.9/fonts/type1/public/amsfonts/cm/cmsy10.pfb><C:/Program Files/MiKTeX 2.9/f
+onts/type1/urw/courier/ucrr8a.pfb>
+Output written on TCC_Daniel.pdf (41 pages, 3654620 bytes).
 PDF statistics:
- 860 PDF objects out of 1000 (max. 8388607)
- 102 named destinations out of 1000 (max. 500000)
- 242 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 1064 PDF objects out of 1200 (max. 8388607)
+ 125 named destinations out of 1000 (max. 500000)
+ 260 words of extra memory for PDF output out of 10000 (max. 10000000)
 

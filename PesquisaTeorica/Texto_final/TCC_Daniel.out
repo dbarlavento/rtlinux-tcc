@@ -20,8 +20,9 @@
 \BOOKMARK [2][-]{subsection.3.4.1}{Configura\347\343o do Kernel}{section.3.4}% 20
 \BOOKMARK [2][-]{subsection.3.4.2}{Instala\347\343o do RTAI, compila\347\343o e execu\347\343o de programas}{section.3.4}% 21
 \BOOKMARK [1][-]{section.3.5}{Execu\347\343o dos Testes}{chapter.3}% 22
-\BOOKMARK [0][-]{chapter.4}{RESULTADOS}{}% 23
+\BOOKMARK [0][-]{chapter.4}{An\341lise dos Resultados}{}% 23
 \BOOKMARK [0][-]{chapter.5}{CONCLUS\325ES}{}% 24
 \BOOKMARK [1][-]{section.5.1}{Trabalhos Futuros}{chapter.5}% 25
-\BOOKMARK [0][-]{appendix.A}{AP\312NDICE}{}% 26
-\BOOKMARK [1][-]{section.A.1}{Ap\352ndice 1}{appendix.A}% 27
+\BOOKMARK [0][-]{appendix.A}{Principais op\347\365es alteradas na configura\347\343o do kernel}{}% 26
+\BOOKMARK [0][-]{appendix.B}{Fluxograma dos programas de teste}{}% 27
+\BOOKMARK [0][-]{appendix.C}{Script para inicializa\347\343o do RTAI \(rtai-init.bash\)}{}% 28

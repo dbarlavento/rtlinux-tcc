@@ -275,7 +275,8 @@
 %%%%%%%%%%%%%%%Novas Definicoes%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \def\grau#1{\gdef\@grau{#1}}
 \def\tipo#1{\gdef\@tipo{#1}}
-\def\bacharelado{\grau{bacharel} \tipo{Trabalho de conclus\~ao}}
+\def\tecnologo{\grau{tecn\'ologo} \tipo{Trabalho de conclus\~ao de curso}}
+\def\bacharelado{\grau{bacharel} \tipo{Trabalho de conclus\~ao de curso}}
 \def\licenciatura{\grau{licenciado} \tipo{Monografia}}
 \def\especializacao{\grau{especialista} \tipo{Monografia}\es@ptrue}
 \def\mestrado{\grau{mestre} \tipo{Disserta\c{c}\~{a}o}\ps@dtrue}
@@ -361,39 +362,60 @@
 \if@titlepage
   \newcommand\maketitle{\begin{titlepage}%
   %%
-  \lineskip .0em
-  \begin{center}%
-  {\rmfamily \sc
-  \begin{tabular}{cp{20.0cm}}
-  \bf\@instituicao\\
-  \bf\@unidadeacademica\\
-{\ifps@d
-   \setpos 
-     \else
-       \ifes@p
-       \setesp
-       \else
-       \MakeUppercase\setcurso
-       \fi 
-\fi}
-\hfill  
-\end{tabular}      
-  }
-  \end{center}
-  \vspace{6.0em}
-  \begin{center}
-    {\rmfamily\bf \@autor \par}%
-  \vspace{12.0em}
-  \ifsb@t 
-     {\bf  \@titulo }\\
-     {\large  \@subtitulo }
-    \else
-     {\bf  \@titulo }
-  \fi
-       \vfill
-    {\rmfamily \bf\@cidade\  --  \@estado \\ 
-        \@ano}%  
-  \end{center}
+  \vfill
+ \begin{center}
+    \begin{figure}[t]
+     \centering
+            \includegraphics[width=5cm]{logo_ifpe_novo}\\[-0.1in]
+     \end{figure}
+
+    {\large\bfseries\MakeUppercase\@instituicao} \\
+    {\large\bfseries\MakeUppercase\@unidadeacademica}  \\ 
+    {\large\bfseries\MakeUppercase\setcurso}  \\ 
+
+    \vspace*{1in}
+    \begin{large} \bfseries \@autor \end{large}\\[0.4in]
+
+    \vspace*{4cm}
+    \noindent \\
+    \large\bfseries{\MakeUppercase\@titulo} \\
+    \large\@subtitulo \\
+    \vfill
+    \large\bfseries{ \@cidade \\ \@ano}
+\end{center}
+%  \lineskip .0em
+%  \begin{center}%
+%  {\rmfamily \sc
+%  \begin{tabular}{cp{20.0cm}}
+%  \bf\@instituicao\\
+%  \bf\@unidadeacademica\\
+%{\ifps@d
+%   \setpos 
+%     \else
+%       \ifes@p
+%       \setesp
+%       \else
+%       \MakeUppercase\setcurso
+%       \fi 
+%\fi}
+%\hfill  
+%\end{tabular}      
+%  }
+%  \end{center}
+%  \vspace{6.0em}
+%  \begin{center}
+%    {\rmfamily\bf \@autor \par}%
+%  \vspace{12.0em}
+%  \ifsb@t 
+%     {\bf  \@titulo }\\
+%     {\large  \@subtitulo }
+%    \else
+%     {\bf  \@titulo }
+%  \fi
+%       \vfill
+%    {\rmfamily \bf\@cidade\  --  \@estado \\ 
+%        \@ano}%  
+%  \end{center}
   \end{titlepage}
   %%--------------------------------------------------
   \begin{titlepage}
@@ -411,9 +433,9 @@
   \end{center}
   \begin{comentario}
   {        \@tipo\ apresentado ao curso de 
-           \@curso\ da \@sigla, como 
-           requisito parcial para a obten\c{c}\~ao do grau
-           de \@grau\ em Ci\^encia da Computa\c{c}\~ao. }
+           \@curso\ do \@instituicao, como 
+           requisito parcial para a obten\c{c}\~ao do t\'itulo
+           de \@grau\ em \@curso. }
   \end{comentario}
  \vspace{1.5em}
  \begin{flushright}
@@ -461,9 +483,9 @@
   \end{center}
   \begin{comentario}
   {        \@tipo\ apresentado ao curso de 
-           \@curso\ da \@sigla, como 
-           requisito parcial para a obten\c{c}\~ao do grau
-           de \@grau\ em Ci\^encia da Computa\c{c}\~ao. }
+           \@curso\ do \@instituicao, como 
+           requisito parcial para a obten\c{c}\~ao do t\'itulo
+           de \@grau\ em \@curso. }
   \end{comentario}
   \vfill
   {\rmfamily \@cidade, \@data.} \\

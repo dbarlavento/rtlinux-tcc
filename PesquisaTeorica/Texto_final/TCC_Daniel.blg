@@ -1,15 +1,15 @@
 [0] Config.pm:354> INFO - This is Biber 2.7
-[1] Config.pm:357> INFO - Logfile is 'TCC_Daniel.blg'
-[49] biber-MSWIN64:303> INFO - === 
-[82] Biber.pm:359> INFO - Reading 'TCC_Daniel.bcf'
-[229] Biber.pm:832> INFO - Using all citekeys in bib section 0
-[252] Biber.pm:3670> INFO - Processing section 0
-[281] Biber.pm:3840> INFO - Looking for bibtex format file 'biblio.bib' for section 0
-[285] bibtex.pm:1435> INFO - Decoding LaTeX character macros into UTF-8
-[297] bibtex.pm:1292> INFO - Found BibTeX data source 'biblio.bib'
-[405] UCollate.pm:68> INFO - Overriding locale 'pt-BR' defaults 'variable = shifted' with 'variable = non-ignorable'
-[405] UCollate.pm:68> INFO - Overriding locale 'pt-BR' defaults 'normalization = NFD' with 'normalization = prenormalized'
-[405] Biber.pm:3499> INFO - Sorting list 'nty/global/' of type 'entry' with scheme 'nty' and locale 'pt-BR'
-[405] Biber.pm:3505> INFO - No sort tailoring available for locale 'pt-BR'
-[435] bbl.pm:608> INFO - Writing 'TCC_Daniel.bbl' with encoding 'UTF-8'
-[439] bbl.pm:712> INFO - Output to TCC_Daniel.bbl
+[0] Config.pm:357> INFO - Logfile is 'TCC_Daniel.blg'
+[54] biber-MSWIN64:303> INFO - === 
+[136] Biber.pm:359> INFO - Reading 'TCC_Daniel.bcf'
+[264] Biber.pm:832> INFO - Using all citekeys in bib section 0
+[284] Biber.pm:3670> INFO - Processing section 0
+[350] Biber.pm:3840> INFO - Looking for bibtex format file 'biblio.bib' for section 0
+[362] bibtex.pm:1435> INFO - Decoding LaTeX character macros into UTF-8
+[381] bibtex.pm:1292> INFO - Found BibTeX data source 'biblio.bib'
+[515] UCollate.pm:68> INFO - Overriding locale 'pt-BR' defaults 'variable = shifted' with 'variable = non-ignorable'
+[515] UCollate.pm:68> INFO - Overriding locale 'pt-BR' defaults 'normalization = NFD' with 'normalization = prenormalized'
+[515] Biber.pm:3499> INFO - Sorting list 'nty/global/' of type 'entry' with scheme 'nty' and locale 'pt-BR'
+[515] Biber.pm:3505> INFO - No sort tailoring available for locale 'pt-BR'
+[542] bbl.pm:608> INFO - Writing 'TCC_Daniel.bbl' with encoding 'UTF-8'
+[545] bbl.pm:712> INFO - Output to TCC_Daniel.bbl

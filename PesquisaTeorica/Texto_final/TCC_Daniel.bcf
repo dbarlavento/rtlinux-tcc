@@ -2260,6 +2260,14 @@
     <bcf:citekey order="23">Anderson2007</bcf:citekey>
     <bcf:citekey order="24">LinuxCyclictest2017</bcf:citekey>
     <bcf:citekey order="25">Lim2017</bcf:citekey>
+    <bcf:citekey order="26">Anderson2007</bcf:citekey>
+    <bcf:citekey order="27">Litayem2011</bcf:citekey>
+    <bcf:citekey order="28">Anderson2007</bcf:citekey>
+    <bcf:citekey order="29">Litayem2011</bcf:citekey>
+    <bcf:citekey order="30">Anderson2007</bcf:citekey>
+    <bcf:citekey order="31">Litayem2011</bcf:citekey>
+    <bcf:citekey order="32">Anderson2007</bcf:citekey>
+    <bcf:citekey order="33">Litayem2011</bcf:citekey>
     <bcf:citekey order="0">*</bcf:citekey>
   </bcf:section>
   <bcf:sortlist section="0" name="nty/global/" type="entry" sortscheme="nty" sortnamekeyscheme="global" labelprefix="">
